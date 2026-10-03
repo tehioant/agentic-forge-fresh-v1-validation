@@ -1,0 +1,940 @@
+{
+  "kind": "actual-native-tool-execution-and-genuine-historical-interview-continuation",
+  "assignment_id": "800c12e5-386f-4598-b97e-6bedd33c1619",
+  "origin": {
+    "chat_id": "1555635434036396065",
+    "parent_chat_id": "1552665601510473790",
+    "platform": "discord",
+    "scope_id": "1551691688291074168",
+    "thread_id": "1555635434036396065"
+  },
+  "docs_path": "docs/factory/validation-spec-7/800c12e5-386f-4598-b97e-6bedd33c1619",
+  "origin_session": "20261002_173951_e80aca92",
+  "executing_continuation_session": "20261003_083214_002bbf71",
+  "continuation_authorization": "Antoine current direct request in thread 1555860008137138218; reuse completed real interview, no replacement questions/answers",
+  "native_continuation_request": {
+    "id": 19657,
+    "role": "user",
+    "content": "[Tehio] finish the work to validate and close ticket [#7](https://github.com/users/tehioant/projects/2?pane=issue&itemId=260925696&issue=tehioant%7Cagentic-forge%7C7) - https://github.com/tehioant/agentic-forge/issues/7\n\nThe only goal of this feature is that the forge runs a grill-me against the user, then run /to-spec to create the specs in github, then next ticket #8 is solving  running /to-tickets on the specs.\nThat's it. everything is handed off through github. \nKeep it simple stupid. Be pragmatic.",
+    "timestamp": 1791016332.421,
+    "platform_message_id": "1555860008137138218"
+  },
+  "adaptation": "Preserve substantive decisions/security; remove only routine shared-understanding/spec/test-seam/batch confirmations; sufficient actual answers transition to to-spec/publication without another operator command",
+  "historical_grill_me_invocation": {
+    "id": 15135,
+    "role": "user",
+    "content": "[Tehio] [IMPORTANT: The user has invoked the \"grill-me\" skill, indicating they want you to follow its instructions. The full skill content is loaded below.]\n\n---\nname: grill-me\ndescription: A relentless interview to sharpen a plan or design.\ndisable-model-invocation: true\n---\n\nCall the Skill tool with \"grilling\".\n\n[Skill directory: /home/ops/.hermes/skills/grill-me]\nResolve any relative paths in this skill (e.g. `scripts/foo.js`, `templates/config.yaml`) against that directory, then run them with the terminal tool using the absolute path.",
+    "timestamp": 1790963794.367076
+  },
+  "historical_grilling_load": {
+    "message_id": 15136,
+    "result_message_id": 15137,
+    "tool_call_id": "call_uwEdBoEJCPLmh82YDvLTSgob",
+    "selected_source": "/home/ops/.hermes/skills/grilling/SKILL.md",
+    "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+    "loaded_content_matches_selected_source": true,
+    "loaded_instructions": "---\nname: grilling\ndescription: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.\n---\n\nInterview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.\n\nWork the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.\n\nFormat a round like so:\n\n```\n\u2753 **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>\n\n\u27a1\ufe0f <your recommended answer>\n\n---\n\n\u2753 **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>\n\n\u27a1\ufe0f <your recommended answer>\n```\n\nEach round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.\n\nFinding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment (filesystem, tools, etc.), dispatch a sub-agent to find it; don't ask the user for anything you could look up yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.\n\nThe session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.\n"
+  },
+  "original_questions_and_actual_answers": [
+    {
+      "id": "Q1",
+      "question": "\u2753 **Q1 \u2014 What does the factory actually produce?**  \nGive me one concrete example: \u201cI give it **X**, it does **Y**, and I receive **Z**.\u201d What would make that first result genuinely useful\u2014not merely an impressive agent demo?\n\n\u27a1\ufe0f **Recommendation:** Start with one narrow software-delivery flow: an approved task goes in, a tested, review-ready pull request comes out. Treat that as a candidate, not an assumption about your goal.",
+      "challenge": "\u2753 **Q1 \u2014 What does the factory actually produce?**  \nGive me one concrete example: \u201cI give it **X**, it does **Y**, and I receive **Z**.\u201d What would make that first result genuinely useful\u2014not merely an impressive agent demo?",
+      "recommendation": "**Recommendation:** Start with one narrow software-delivery flow: an approved task goes in, a tested, review-ready pull request comes out. Treat that as a candidate, not an assumption about your goal.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640460935041045",
+        "text": "\"Regarding question one, I give it an idea it grills me and I receive a set of specs of all the questions has already asked me with the girl me skill\""
+      }
+    },
+    {
+      "id": "Q2",
+      "question": "\u2753 **Q2 \u2014 Who are we building it for?**  \nIs this your personal engineering tool, something your team will operate, or a product for other users? Who is accountable when its output is wrong?\n\n\u27a1\ufe0f **Recommendation:** Build for you as the first operator and accountable reviewer. Prove the loop before taking on a shared platform\u2019s permissions and coordination problems.",
+      "challenge": "\u2753 **Q2 \u2014 Who are we building it for?**  \nIs this your personal engineering tool, something your team will operate, or a product for other users? Who is accountable when its output is wrong?",
+      "recommendation": "**Recommendation:** Build for you as the first operator and accountable reviewer. Prove the loop before taking on a shared platform\u2019s permissions and coordination problems.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640539146092717",
+        "text": "\"Question two will building this for me. It's for me to operate and build products\""
+      }
+    },
+    {
+      "id": "Q3",
+      "question": "\u2753 **Q3 \u2014 What are the hard limits on its autonomy?**  \nWhat must it never do without your approval? Also, are there non-negotiable constraints on spending, data access, or where it runs?\n\n\u27a1\ufe0f **Recommendation:** Let it investigate, implement, test, and revise in an isolated workspace. Require approval for merges, deployments, destructive actions, and external communications. Give each run an explicit budget and a stop condition.\n\nAnswer **Q1\u2013Q3** in rough terms. We\u2019ll resolve the architecture only after these roots are settled.",
+      "challenge": "\u2753 **Q3 \u2014 What are the hard limits on its autonomy?**  \nWhat must it never do without your approval? Also, are there non-negotiable constraints on spending, data access, or where it runs?",
+      "recommendation": "**Recommendation:** Let it investigate, implement, test, and revise in an isolated workspace. Require approval for merges, deployments, destructive actions, and external communications. Give each run an explicit budget and a stop condition.\n\nAnswer **Q1\u2013Q3** in rough terms. We\u2019ll resolve the architecture only after these roots are settled.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640631207002224",
+        "text": "\"For now, I don't see any hard limits except start a new project without my approval or my idea.\""
+      }
+    },
+    {
+      "id": "Q4",
+      "question": "\u2753 **Q4 \u2014 Where does the factory end?**  \nIs generating the specs the entire initial loop, or is it the first stage of a factory that also implements, tests, and delivers the product?\n\n\u27a1\ufe0f **Recommendation:** Design the intended end-to-end loop now, but make **idea \u2192 approved specs** the first working increment. That lets us validate how it captures your intent before it writes code.",
+      "challenge": "\u2753 **Q4 \u2014 Where does the factory end?**  \nIs generating the specs the entire initial loop, or is it the first stage of a factory that also implements, tests, and delivers the product?",
+      "recommendation": "**Recommendation:** Design the intended end-to-end loop now, but make **idea \u2192 approved specs** the first working increment. That lets us validate how it captures your intent before it writes code.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642876380184586",
+        "text": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+      }
+    },
+    {
+      "id": "Q5",
+      "question": "\u2753 **Q5 \u2014 What belongs in the specs?**  \nDo you want a record of every question and answer, implementation-ready specifications derived from those answers, or both?\n\n\u27a1\ufe0f **Recommendation:** **Both, kept distinct:** a question-and-answer decision log for traceability, plus specs covering goals, behavior, constraints, non-goals, and verifiable acceptance criteria. A transcript alone isn\u2019t a build specification.",
+      "challenge": "\u2753 **Q5 \u2014 What belongs in the specs?**  \nDo you want a record of every question and answer, implementation-ready specifications derived from those answers, or both?",
+      "recommendation": "**Recommendation:** **Both, kept distinct:** a question-and-answer decision log for traceability, plus specs covering goals, behavior, constraints, non-goals, and verifiable acceptance criteria. A transcript alone isn\u2019t a build specification.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642876380184586",
+        "text": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+      }
+    },
+    {
+      "id": "Q6",
+      "question": "\u2753 **Q6 \u2014 Who decides the grilling is finished?**  \nShould it continue until every identified decision is resolved, or can you end the interview with unresolved points?\n\n\u27a1\ufe0f **Recommendation:** It proposes when the design is sufficiently settled and explicitly lists remaining uncertainties. **You approve the specs before implementation.** You can stop earlier, but unanswered points remain visible\u2014not silently converted into assumptions.",
+      "challenge": "\u2753 **Q6 \u2014 Who decides the grilling is finished?**  \nShould it continue until every identified decision is resolved, or can you end the interview with unresolved points?",
+      "recommendation": "**Recommendation:** It proposes when the design is sufficiently settled and explicitly lists remaining uncertainties. **You approve the specs before implementation.** You can stop earlier, but unanswered points remain visible\u2014not silently converted into assumptions.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642969170772079",
+        "text": "\"The agent is autonomous with deciding what it needs with me, and therefore decides when the grilling is finished.\""
+      }
+    },
+    {
+      "id": "Q7",
+      "question": "\u2753 **Q7 \u2014 External consequences**  \nYou haven\u2019t answered this part yet: does approving an idea also authorize spending money, deploying publicly, and deleting real data?\n\n\u27a1\ufe0f **Recommendation:** Autonomous development and merges; separate approval for new spending, public releases, and destructive changes to real data.",
+      "challenge": "\u2753 **Q7 \u2014 External consequences**  \nYou haven\u2019t answered this part yet: does approving an idea also authorize spending money, deploying publicly, and deleting real data?",
+      "recommendation": "**Recommendation:** Autonomous development and merges; separate approval for new spending, public releases, and destructive changes to real data.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q7: spending must always be asked for approval\nDeploying must always be secure."
+      }
+    },
+    {
+      "id": "Q8",
+      "question": "\u2753 **Q8 \u2014 \u201cLanguage\u201d in the specs**  \nDo you mean the programming language, the product\u2019s user-facing language, or both? Should the agent choose, or settle this with you during grilling?\n\n\u27a1\ufe0f **Recommendation:** Cover both. The agent recommends a stack based on the product, checks whether you have constraints, and records the decision before generating tickets.",
+      "challenge": "\u2753 **Q8 \u2014 \u201cLanguage\u201d in the specs**  \nDo you mean the programming language, the product\u2019s user-facing language, or both? Should the agent choose, or settle this with you during grilling?",
+      "recommendation": "**Recommendation:** Cover both. The agent recommends a stack based on the product, checks whether you have constraints, and records the decision before generating tickets.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q8: agent recommend and decision is with the user."
+      }
+    },
+    {
+      "id": "Q9",
+      "question": "\u2753 **Q9 \u2014 What does the next grilling round investigate?**  \nAfter all tickets are completed, does it ask you for the next improvement to **the same product**, evaluate gaps against the original specs, or wait for a new product idea?\n\n\u27a1\ufe0f **Recommendation:** First verify the existing product against its specs. Then grill you about its next iteration. A new product remains blocked until you supply or approve its idea.",
+      "challenge": "\u2753 **Q9 \u2014 What does the next grilling round investigate?**  \nAfter all tickets are completed, does it ask you for the next improvement to **the same product**, evaluate gaps against the original specs, or wait for a new product idea?",
+      "recommendation": "**Recommendation:** First verify the existing product against its specs. Then grill you about its next iteration. A new product remains blocked until you supply or approve its idea.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q9: next grilling we\u2019ll be for next iteration of the product. A product is never finished."
+      }
+    },
+    {
+      "id": "Q10",
+      "question": "\u2753 **Q10 \u2014 What counts as a fully developed product?**  \nIs it enough that it runs locally, or must it be deployed and usable by its intended users?\n\n\u27a1\ufe0f **Recommendation:** Define this during each product\u2019s initial grilling: required user journeys, acceptance tests, runtime environment, and delivery requirements. Completion is measured against those\u2014not the agent\u2019s feeling that it is finished.",
+      "challenge": "\u2753 **Q10 \u2014 What counts as a fully developed product?**  \nIs it enough that it runs locally, or must it be deployed and usable by its intended users?",
+      "recommendation": "**Recommendation:** Define this during each product\u2019s initial grilling: required user journeys, acceptance tests, runtime environment, and delivery requirements. Completion is measured against those\u2014not the agent\u2019s feeling that it is finished.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q10: fully developed is maybe the wrong wording. The  step is finished when the tickets created by the specs and the grilling are all finished. \nA ticket is finished when all tests are green. It answers the ticket description/feature/changes/requirements."
+      }
+    },
+    {
+      "id": "Q11",
+      "question": "\u2753 **Q11 \u2014 What authorizes implementation?**  \nAfter the agent finishes grilling and generates the specs and tickets, should implementation start automatically, or should you approve that package first?\n\n\u27a1\ufe0f **Recommendation:** One approval of the iteration\u2019s specs and ticket scope, then autonomous execution of that batch. This catches misunderstandings without requiring approval of every ticket.",
+      "challenge": "\u2753 **Q11 \u2014 What authorizes implementation?**  \nAfter the agent finishes grilling and generates the specs and tickets, should implementation start automatically, or should you approve that package first?",
+      "recommendation": "**Recommendation:** One approval of the iteration\u2019s specs and ticket scope, then autonomous execution of that batch. This catches misunderstandings without requiring approval of every ticket.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q11: implementation starts right away. If necessary the user will stop it."
+      }
+    },
+    {
+      "id": "Q12",
+      "question": "\u2753 **Q12 \u2014 Does \u201cfinished\u201d include review and merge?**  \nCan a ticket close when its implementation satisfies the requirements and passes tests, or only after simplification, successful review, and merge?\n\n\u27a1\ufe0f **Recommendation:** Close it **only after merge**, with tests green on the resulting integrated code. Review must check the requirements independently; green tests alone can miss functionality\u2014or pass because the agent weakened a test.",
+      "challenge": "\u2753 **Q12 \u2014 Does \u201cfinished\u201d include review and merge?**  \nCan a ticket close when its implementation satisfies the requirements and passes tests, or only after simplification, successful review, and merge?",
+      "recommendation": "**Recommendation:** Close it **only after merge**, with tests green on the resulting integrated code. Review must check the requirements independently; green tests alone can miss functionality\u2014or pass because the agent weakened a test.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q12: a ticket is closed only when it is merged on main. If it is not merged, it doesn\u2019t exist. The agents must be able to merge the tickets autonomously."
+      }
+    },
+    {
+      "id": "Q13",
+      "question": "\u2753 **Q13 \u2014 What happens when a ticket gets stuck?**  \nIf tests keep failing, review keeps rejecting the changes, or a dependency blocks progress, how should the factory respond?\n\n\u27a1\ufe0f **Recommendation:** Retry autonomously within a bounded attempt budget. Then mark the ticket blocked, preserve the evidence, and notify you. Continue with another independent ticket if possible. Never silently reduce requirements to make the ticket pass.",
+      "challenge": "\u2753 **Q13 \u2014 What happens when a ticket gets stuck?**  \nIf tests keep failing, review keeps rejecting the changes, or a dependency blocks progress, how should the factory respond?",
+      "recommendation": "**Recommendation:** Retry autonomously within a bounded attempt budget. Then mark the ticket blocked, preserve the evidence, and notify you. Continue with another independent ticket if possible. Never silently reduce requirements to make the ticket pass.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q13: great question. A debug agent comes in and investigates. Create a report and the user can make the decision for the direction the project has to take to resolve the ticket being stuck."
+      }
+    },
+    {
+      "id": "Q14",
+      "question": "\u2753 **Q14 \u2014 How do we enforce secure deployment?**  \nMay the factory deploy automatically once security checks pass, or should deployment also require your approval? \u201cSecure\u201d needs a checkable gate, not an agent\u2019s assurance.\n\n\u27a1\ufe0f **Recommendation:** Allow automatic deployment to an isolated preview environment after mandatory checks. Require approval for production initially. Define the concrete security requirements during each product\u2019s grilling, with failed checks blocking deployment.",
+      "challenge": "\u2753 **Q14 \u2014 How do we enforce secure deployment?**  \nMay the factory deploy automatically once security checks pass, or should deployment also require your approval? \u201cSecure\u201d needs a checkable gate, not an agent\u2019s assurance.",
+      "recommendation": "**Recommendation:** Allow automatic deployment to an isolated preview environment after mandatory checks. Require approval for production initially. Define the concrete security requirements during each product\u2019s grilling, with failed checks blocking deployment.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q14: quality gates, security checks must pass in CI and then CD. Agents must monitor their deployment in main. If it fails they need to fix it."
+      }
+    },
+    {
+      "id": "Q15",
+      "question": "\u2753 **Q15 \u2014 When is a ticket \u201cstuck\u201d?**  \nWhat should trigger the debug agent: repeated unsuccessful fixes, lack of progress, an explicit blocker, or any failure?\n\n\u27a1\ufe0f **Recommendation:** Ordinary failures get an autonomous fix attempt. Repeated failure of the same check, no meaningful progress, or a blocker requiring a new product/architecture decision triggers diagnosis. The report should contain evidence, attempted fixes, the likely cause, and recommended options\u2014not just logs.",
+      "challenge": "\u2753 **Q15 \u2014 When is a ticket \u201cstuck\u201d?**  \nWhat should trigger the debug agent: repeated unsuccessful fixes, lack of progress, an explicit blocker, or any failure?",
+      "recommendation": "**Recommendation:** Ordinary failures get an autonomous fix attempt. Repeated failure of the same check, no meaningful progress, or a blocker requiring a new product/architecture decision triggers diagnosis. The report should contain evidence, attempted fixes, the likely cause, and recommended options\u2014not just logs.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q15: agents responsible for the ticket decides when it is stuck. It still has to try to fix it and iterate."
+      }
+    },
+    {
+      "id": "Q16",
+      "question": "\u2753 **Q16 \u2014 What happens while `main` is broken?**  \nShould other tickets keep merging while an agent repairs a failed CI/CD run or deployment? And if that repair becomes stuck, does your debug-report-and-user-decision rule apply?\n\n\u27a1\ufe0f **Recommendation:** Pause new merges and prioritize restoring healthy `main`. Attempt repairs autonomously; escalate through the debug agent if stuck. Permit a safe revert of the offending change when appropriate, and reopen its ticket if its requirements are no longer delivered.",
+      "challenge": "\u2753 **Q16 \u2014 What happens while `main` is broken?**  \nShould other tickets keep merging while an agent repairs a failed CI/CD run or deployment? And if that repair becomes stuck, does your debug-report-and-user-decision rule apply?",
+      "recommendation": "**Recommendation:** Pause new merges and prioritize restoring healthy `main`. Attempt repairs autonomously; escalate through the debug agent if stuck. Permit a safe revert of the offending change when appropriate, and reopen its ticket if its requirements are no longer delivered.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q16: agent comes in to fix main. No commit can be merged on main. Roll forward is a possible quick solution if possible. Agents decide on the situation."
+      }
+    },
+    {
+      "id": "Q17",
+      "question": "\u2753 **Q17 \u2014 Where does the factory keep its authoritative state?**  \nWhere should specs, tickets, dependencies, progress, and debug reports live so that a restart doesn\u2019t lose the project\u2019s position?\n\n\u27a1\ufe0f **Recommendation:** Versioned specs and decision records in the product repository; tickets and dependencies in GitHub Issues; debug reports linked to the affected ticket. Use a small durable execution record for the factory\u2019s current stage\u2014chat history shouldn\u2019t be its only memory.",
+      "challenge": "\u2753 **Q17 \u2014 Where does the factory keep its authoritative state?**  \nWhere should specs, tickets, dependencies, progress, and debug reports live so that a restart doesn\u2019t lose the project\u2019s position?",
+      "recommendation": "**Recommendation:** Versioned specs and decision records in the product repository; tickets and dependencies in GitHub Issues; debug reports linked to the affected ticket. Use a small durable execution record for the factory\u2019s current stage\u2014chat history shouldn\u2019t be its only memory.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q17: tickets are in repository projects board. Specs are in code under docs/"
+      }
+    },
+    {
+      "id": "Q18",
+      "question": "\u2753 **Q18 \u2014 How independent are the agents?**  \nShould one agent carry a ticket through implementation, simplification, review, and merge, or should those stages use separate agents?\n\n\u27a1\ufe0f **Recommendation:** Separate implementation and review agents with fresh contexts. The reviewer receives the ticket, specs, standards, and diff\u2014not the implementer\u2019s persuasive summary. Use a separate debug agent for investigation. A deterministic controller manages transitions and verifies stage results rather than letting agents declare themselves done.",
+      "challenge": "\u2753 **Q18 \u2014 How independent are the agents?**  \nShould one agent carry a ticket through implementation, simplification, review, and merge, or should those stages use separate agents?",
+      "recommendation": "**Recommendation:** Separate implementation and review agents with fresh contexts. The reviewer receives the ticket, specs, standards, and diff\u2014not the implementer\u2019s persuasive summary. Use a separate debug agent for investigation. A deterministic controller manages transitions and verifies stage results rather than letting agents declare themselves done.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q18: proceed as recommended"
+      }
+    },
+    {
+      "id": "Q19",
+      "question": "\u2753 **Q19 \u2014 Does the merge freeze exempt repairs?**  \n\u201cNo commit can be merged on `main`\u201d conflicts with roll-forward: a repair usually needs a new commit.\n\n\u27a1\ufe0f **Recommendation:** Freeze **ordinary ticket merges**, but allow the repair agent to merge recovery changes through the required quality/security gates. Resume ordinary merges only after `main` and its deployment are healthy.",
+      "challenge": "\u2753 **Q19 \u2014 Does the merge freeze exempt repairs?**  \n\u201cNo commit can be merged on `main`\u201d conflicts with roll-forward: a repair usually needs a new commit.",
+      "recommendation": "**Recommendation:** Freeze **ordinary ticket merges**, but allow the repair agent to merge recovery changes through the required quality/security gates. Resume ordinary merges only after `main` and its deployment are healthy.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q19: as recommended"
+      }
+    },
+    {
+      "id": "Q20",
+      "question": "\u2753 **Q20 \u2014 One ticket at a time, or parallel tickets?**  \nSeparate agents can collaborate on one ticket without implementing multiple tickets concurrently. Which execution model do you want?\n\n\u27a1\ufe0f **Recommendation:** Start with **one active implementation ticket**, chosen from tickets whose dependencies are satisfied. Parallelize its independent review work. Add concurrent ticket implementation later once isolation and integration are proven.",
+      "challenge": "\u2753 **Q20 \u2014 One ticket at a time, or parallel tickets?**  \nSeparate agents can collaborate on one ticket without implementing multiple tickets concurrently. Which execution model do you want?",
+      "recommendation": "**Recommendation:** Start with **one active implementation ticket**, chosen from tickets whose dependencies are satisfied. Parallelize its independent review work. Add concurrent ticket implementation later once isolation and integration are proven.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q20: as recommended"
+      }
+    },
+    {
+      "id": "Q21",
+      "question": "\u2753 **Q21 \u2014 What runs the factory?**  \nShould this be a reusable controller that runs independently of our chat, or a workflow I execute inside a Hermes conversation?\n\n\u27a1\ufe0f **Recommendation:** A reusable, deterministic controller independent of chat, with agents executing the skill-based stages. It persists progress, resumes after interruption, and exposes start, status, pause, and stop controls. Hermes can be your interface without being the sole place the loop exists.",
+      "challenge": "\u2753 **Q21 \u2014 What runs the factory?**  \nShould this be a reusable controller that runs independently of our chat, or a workflow I execute inside a Hermes conversation?",
+      "recommendation": "**Recommendation:** A reusable, deterministic controller independent of chat, with agents executing the skill-based stages. It persists progress, resumes after interruption, and exposes start, status, pause, and stop controls. Hermes can be your interface without being the sole place the loop exists.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q21: grill me starts from conversation. Factory runs in the background. Hermes comes back to the thread if it needs something or there is an issue. Otherwise no interactions."
+      }
+    },
+    {
+      "id": "Q22",
+      "question": "\u2753 **Q22 \u2014 How does the next iteration begin?**  \nWhen the batch is merged and deployment is healthy, does the factory immediately invite you into another grilling session, or wait for you to request the next iteration?\n\n\u27a1\ufe0f **Recommendation:** It delivers an iteration report and invites you to the next grilling. It then waits for your input\u2014no self-invented feature batch while you\u2019re absent. The next interview starts from the existing product and its updated specs.",
+      "challenge": "\u2753 **Q22 \u2014 How does the next iteration begin?**  \nWhen the batch is merged and deployment is healthy, does the factory immediately invite you into another grilling session, or wait for you to request the next iteration?",
+      "recommendation": "**Recommendation:** It delivers an iteration report and invites you to the next grilling. It then waits for your input\u2014no self-invented feature batch while you\u2019re absent. The next interview starts from the existing product and its updated specs.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q22: as recommended"
+      }
+    },
+    {
+      "id": "Q23",
+      "question": "\u2753 **Q23 \u2014 Do new bugs extend the current iteration?**  \nIf agents discover bugs while executing the planned tickets, do all of them join the current batch, or can some wait for the next iteration?\n\n\u27a1\ufe0f **Recommendation:** Fix broken `main` immediately. Include bugs that prevent the current iteration from satisfying its requirements. Put unrelated, non-blocking bugs on the board for the next grilling. Otherwise, discovering new work can keep an iteration open indefinitely.",
+      "challenge": "\u2753 **Q23 \u2014 Do new bugs extend the current iteration?**  \nIf agents discover bugs while executing the planned tickets, do all of them join the current batch, or can some wait for the next iteration?",
+      "recommendation": "**Recommendation:** Fix broken `main` immediately. Include bugs that prevent the current iteration from satisfying its requirements. Put unrelated, non-blocking bugs on the board for the next grilling. Otherwise, discovering new work can keep an iteration open indefinitely.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q23: as recommended"
+      }
+    },
+    {
+      "id": "Q24",
+      "question": "\u2753 **Q24 \u2014 What continues while you\u2019re deciding on a stuck ticket?**  \nAfter the debug agent posts its report, should the entire factory wait, or may it work on another independent ticket?\n\n\u27a1\ufe0f **Recommendation:** Block the affected ticket and its dependents, then continue independent work. If `main` is broken, keep ordinary execution paused until recovery is resolved. Your decision unblocks the relevant work\u2014not necessarily the whole factory.",
+      "challenge": "\u2753 **Q24 \u2014 What continues while you\u2019re deciding on a stuck ticket?**  \nAfter the debug agent posts its report, should the entire factory wait, or may it work on another independent ticket?",
+      "recommendation": "**Recommendation:** Block the affected ticket and its dependents, then continue independent work. If `main` is broken, keep ordinary execution paused until recovery is resolved. Your decision unblocks the relevant work\u2014not necessarily the whole factory.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q24: as recommended"
+      }
+    },
+    {
+      "id": "Q25",
+      "question": "\u2753 **Q25 \u2014 What does \u201cstop\u201d mean operationally?**  \nWhen you interrupt the factory, should it stop immediately, finish its active ticket, or pause at a safe checkpoint? What should happen after a server restart?\n\n\u27a1\ufe0f **Recommendation:** A normal pause prevents new work and checkpoints the active stage without merging further changes. An emergency stop terminates workers immediately. Preserve work and diagnostic state in both cases; after a restart, reconcile repository, board, and CI state before resuming.\n\nI\u2019m checking the supported background execution and thread-notification mechanisms separately, without touching the beta.",
+      "challenge": "\u2753 **Q25 \u2014 What does \u201cstop\u201d mean operationally?**  \nWhen you interrupt the factory, should it stop immediately, finish its active ticket, or pause at a safe checkpoint? What should happen after a server restart?",
+      "recommendation": "**Recommendation:** A normal pause prevents new work and checkpoints the active stage without merging further changes. An emergency stop terminates workers immediately. Preserve work and diagnostic state in both cases; after a restart, reconcile repository, board, and CI state before resuming.\n\nI\u2019m checking the supported background execution and thread-notification mechanisms separately, without touching the beta.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q25: pause. as recommended"
+      }
+    },
+    {
+      "id": "Q26",
+      "question": "\u2753 **Q26 \u2014 Which part of the product becomes tickets?**  \nThe specs describe the whole product and its first step. Should the factory generate executable tickets for the **current milestone only**, or for everything in the product vision?\n\n\u27a1\ufe0f **Recommendation:** Keep the whole-product vision in `docs/`, but generate and execute tickets only for the milestone settled during grilling. Future capabilities remain documented without becoming an enormous committed backlog.",
+      "challenge": "\u2753 **Q26 \u2014 Which part of the product becomes tickets?**  \nThe specs describe the whole product and its first step. Should the factory generate executable tickets for the **current milestone only**, or for everything in the product vision?",
+      "recommendation": "**Recommendation:** Keep the whole-product vision in `docs/`, but generate and execute tickets only for the milestone settled during grilling. Future capabilities remain documented without becoming an enormous committed backlog.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555655064360718367",
+        "text": "Q26: as recommended"
+      }
+    },
+    {
+      "id": "Q27",
+      "question": "\u2753 **Q27 \u2014 Is GitHub the repository platform?**  \nBy \u201crepository projects board,\u201d do you mean GitHub Projects? Should GitHub Issues represent both feature tickets and bugs, with pull requests delivering them?\n\n\u27a1\ufe0f **Recommendation:** Yes: GitHub Issues on a GitHub Projects board, linked to their specs and delivery PRs. Use the same required work-item format for features and bugs, with additional reproduction details for bugs.",
+      "challenge": "\u2753 **Q27 \u2014 Is GitHub the repository platform?**  \nBy \u201crepository projects board,\u201d do you mean GitHub Projects? Should GitHub Issues represent both feature tickets and bugs, with pull requests delivering them?",
+      "recommendation": "**Recommendation:** Yes: GitHub Issues on a GitHub Projects board, linked to their specs and delivery PRs. Use the same required work-item format for features and bugs, with additional reproduction details for bugs.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555655064360718367",
+        "text": "Q27: GitHub repo is the platform. User must specify if there is a different account or platform."
+      }
+    },
+    {
+      "id": "Q28",
+      "question": "\u2753 **Q28, clarified \u2014 Are you happy with dedicated Hermes role profiles launching fresh workers, rather than using Codex CLI as the executor?**\n\n\u27a1\ufe0f That is my recommendation. **No profiles have been created or changed.**",
+      "challenge": "\u2753 **Q28, clarified \u2014 Are you happy with dedicated Hermes role profiles launching fresh workers, rather than using Codex CLI as the executor?**",
+      "recommendation": "That is my recommendation. **No profiles have been created or changed.**",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555657800804208840",
+        "text": "Okay proceed with workers as recommended"
+      }
+    },
+    {
+      "id": "Q29",
+      "question": "\u2753 **Q29 \u2014 What counts as spending that needs approval?**  \nDoes using an existing subscription or previously approved service count, or is the approval boundary any **new charge or financial commitment**? Metered model calls matter here too.\n\n\u27a1\ufe0f **Recommendation:** Existing subscription allowances can be used autonomously. Any chargeable API usage, purchase, or infrastructure allocation requires approval with a clear spending scope and ceiling. Exhausting an allowance pauses the affected work\u2014it must not silently switch to a paid alternative.",
+      "challenge": "\u2753 **Q29 \u2014 What counts as spending that needs approval?**  \nDoes using an existing subscription or previously approved service count, or is the approval boundary any **new charge or financial commitment**? Metered model calls matter here too.",
+      "recommendation": "**Recommendation:** Existing subscription allowances can be used autonomously. Any chargeable API usage, purchase, or infrastructure allocation requires approval with a clear spending scope and ceiling. Exhausting an allowance pauses the affected work\u2014it must not silently switch to a paid alternative.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "hermes-session:20261002_173951_e80aca92:message:15252",
+        "text": "Q29: as recommended"
+      }
+    },
+    {
+      "id": "Q30",
+      "question": "\u2753 **Q30 \u2014 What should the factory itself be built with?**  \nThis is separate from the programming language chosen for each product.\n\n\u27a1\ufe0f **Recommendation:** Python for the deterministic controller, using supported Hermes and GitHub interfaces. Keep it outside Hermes\u2019s core so it can be versioned and tested independently.",
+      "challenge": "\u2753 **Q30 \u2014 What should the factory itself be built with?**  \nThis is separate from the programming language chosen for each product.",
+      "recommendation": "**Recommendation:** Python for the deterministic controller, using supported Hermes and GitHub interfaces. Keep it outside Hermes\u2019s core so it can be versioned and tested independently.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q30: as recommended"
+      }
+    },
+    {
+      "id": "Q31",
+      "question": "\u2753 **Q31 \u2014 Where should it run?**  \nShould the background controller and workers run on this server, or somewhere else?\n\n\u27a1\ufe0f **Recommendation:** Initially, this server, under a supervised service with persistent state and restart recovery. Grilling and decision requests stay in the originating thread. No new infrastructure spending.",
+      "challenge": "\u2753 **Q31 \u2014 Where should it run?**  \nShould the background controller and workers run on this server, or somewhere else?",
+      "recommendation": "**Recommendation:** Initially, this server, under a supervised service with persistent state and restart recovery. Grilling and decision requests stay in the originating thread. No new infrastructure spending.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q31: as recommended"
+      }
+    },
+    {
+      "id": "Q32",
+      "question": "\u2753 **Q32 \u2014 How should workers get credentials and permissions?**  \nShould every role have the same access, or should access depend on its responsibilities?\n\n\u27a1\ufe0f **Recommendation:** Separate capabilities: reviewers inspect and run checks; implementers change their worktree and push a branch; only the controlled merge path can merge. CI/CD handles deployment credentials. Workers should not receive your personal assistant\u2019s unrelated credentials. Actual isolation must enforce this\u2014not just prompts.",
+      "challenge": "\u2753 **Q32 \u2014 How should workers get credentials and permissions?**  \nShould every role have the same access, or should access depend on its responsibilities?",
+      "recommendation": "**Recommendation:** Separate capabilities: reviewers inspect and run checks; implementers change their worktree and push a branch; only the controlled merge path can merge. CI/CD handles deployment credentials. Workers should not receive your personal assistant\u2019s unrelated credentials. Actual isolation must enforce this\u2014not just prompts.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q32: as recommended"
+      }
+    },
+    {
+      "id": "Q33",
+      "question": "\u2753 **Q33 \u2014 What model policy should workers use initially?**  \nShould roles use the existing approved provider/model setup, or should we choose different models for implementation, review, and debugging?\n\n\u27a1\ufe0f **Recommendation:** Start with the existing approved setup, make model selection configurable per role, and introduce differences only when evaluation shows a benefit. No automatic switch to a chargeable provider when quotas run out.",
+      "challenge": "\u2753 **Q33 \u2014 What model policy should workers use initially?**  \nShould roles use the existing approved provider/model setup, or should we choose different models for implementation, review, and debugging?",
+      "recommendation": "**Recommendation:** Start with the existing approved setup, make model selection configurable per role, and introduce differences only when evaluation shows a benefit. No automatic switch to a chargeable provider when quotas run out.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q33: as recommended"
+      }
+    },
+    {
+      "id": "Q34",
+      "question": "\u2753 **Q34 \u2014 New products, existing repositories, or both?**  \nShould the factory create a repository for an approved new product, work in an existing repository you explicitly identify, or support both?\n\n\u27a1\ufe0f **Recommendation:** Both. New repositories are private by default; existing repositories require an explicit selection. It must never infer that an unrelated repository\u2014including the beta\u2014is a target.",
+      "challenge": "\u2753 **Q34 \u2014 New products, existing repositories, or both?**  \nShould the factory create a repository for an approved new product, work in an existing repository you explicitly identify, or support both?",
+      "recommendation": "**Recommendation:** Both. New repositories are private by default; existing repositories require an explicit selection. It must never infer that an unrelated repository\u2014including the beta\u2014is a target.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      }
+    },
+    {
+      "id": "Q35",
+      "question": "\u2753 **Q35 \u2014 Can multiple products run simultaneously?**  \nWe agreed on one active implementation ticket. Should that limit apply across the whole factory, or separately to each product?\n\n\u27a1\ufe0f **Recommendation:** Initially, one active product iteration across the factory. Other products can retain their state while paused. This keeps resource use, repair priority, and operator attention predictable.",
+      "challenge": "\u2753 **Q35 \u2014 Can multiple products run simultaneously?**  \nWe agreed on one active implementation ticket. Should that limit apply across the whole factory, or separately to each product?",
+      "recommendation": "**Recommendation:** Initially, one active product iteration across the factory. Other products can retain their state while paused. This keeps resource use, repair priority, and operator attention predictable.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      }
+    },
+    {
+      "id": "Q36",
+      "question": "\u2753 **Q36 \u2014 What happens when requirements change mid-iteration?**  \nIf you change the product direction or materially edit a ticket while workers are implementing it, should they immediately adapt, or pause for clarification?\n\n\u27a1\ufe0f **Recommendation:** Pause the affected work, resolve the change with you, update the specs and tickets, then resume. Preserve completed work where useful. Minor clarifications can proceed, but agents must not silently reinterpret a changed requirement or merge against an obsolete ticket version.\n\nI\u2019m auditing the existing model setup, GitHub identity, and available isolation mechanisms read-only before we finalize the technical design; no beta inspection or configuration changes.",
+      "challenge": "\u2753 **Q36 \u2014 What happens when requirements change mid-iteration?**  \nIf you change the product direction or materially edit a ticket while workers are implementing it, should they immediately adapt, or pause for clarification?",
+      "recommendation": "**Recommendation:** Pause the affected work, resolve the change with you, update the specs and tickets, then resume. Preserve completed work where useful. Minor clarifications can proceed, but agents must not silently reinterpret a changed requirement or merge against an obsolete ticket version.\n\nI\u2019m auditing the existing model setup, GitHub identity, and available isolation mechanisms read-only before we finalize the technical design; no beta inspection or configuration changes.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      }
+    },
+    {
+      "id": "Q37",
+      "question": "\u2753 **Q37 \u2014 Approve containerized workers?**  \nShould each worker run entirely inside an isolated container, rather than merely sending its terminal commands to Docker?\n\n\u27a1\ufe0f **Recommendation:** Yes. Keep the trusted controller outside worker containers. Give workers only their assigned workspace, scratch space, and necessary model access\u2014no Docker socket, personal credentials, or deployment credentials. The reviewer gets read-only access to the submitted code plus writable scratch space for running checks. GitHub writes go through controlled operations that enforce the role\u2019s permissions.\n\nThis is the proposed design; its isolation must be tested before we call it enforced.",
+      "challenge": "\u2753 **Q37 \u2014 Approve containerized workers?**  \nShould each worker run entirely inside an isolated container, rather than merely sending its terminal commands to Docker?",
+      "recommendation": "**Recommendation:** Yes. Keep the trusted controller outside worker containers. Give workers only their assigned workspace, scratch space, and necessary model access\u2014no Docker socket, personal credentials, or deployment credentials. The reviewer gets read-only access to the submitted code plus writable scratch space for running checks. GitHub writes go through controlled operations that enforce the role\u2019s permissions.\n\nThis is the proposed design; its isolation must be tested before we call it enforced.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      }
+    },
+    {
+      "id": "Q38",
+      "question": "\u2753 **Q38 \u2014 Can agents change the checks that gate them?**  \nAgents sometimes \u201cfix\u201d a failing build by removing a test, disabling a scanner, or relaxing a threshold. What authority should they have here?\n\n\u27a1\ufe0f **Recommendation:** They may add or legitimately update tests, with independent review against the requirements. They may **not bypass required checks, weaken security policy, or disable branch protection** to obtain a green result. Changes to those policies require your decision.",
+      "challenge": "\u2753 **Q38 \u2014 Can agents change the checks that gate them?**  \nAgents sometimes \u201cfix\u201d a failing build by removing a test, disabling a scanner, or relaxing a threshold. What authority should they have here?",
+      "recommendation": "**Recommendation:** They may add or legitimately update tests, with independent review against the requirements. They may **not bypass required checks, weaken security policy, or disable branch protection** to obtain a green result. Changes to those policies require your decision.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      }
+    },
+    {
+      "id": "Q39",
+      "question": "\u2753 **Q39 \u2014 How should we validate the factory itself?**  \nMay we create a private, disposable GitHub validation repository alongside the factory\u2019s own repository?\n\n\u27a1\ufe0f **Recommendation:** Yes, explicitly for testing\u2014not as a new product. Exercise the real loop and deliberately test rejection, a stuck ticket, broken `main`, pause/restart, and spending approval. We should prove those paths work, not just demonstrate a successful agent-generated commit.",
+      "challenge": "\u2753 **Q39 \u2014 How should we validate the factory itself?**  \nMay we create a private, disposable GitHub validation repository alongside the factory\u2019s own repository?",
+      "recommendation": "**Recommendation:** Yes, explicitly for testing\u2014not as a new product. Exercise the real loop and deliberately test rejection, a stuck ticket, broken `main`, pause/restart, and spending approval. We should prove those paths work, not just demonstrate a successful agent-generated commit.",
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      }
+    }
+  ],
+  "exact_native_interview_matches": [
+    {
+      "question_id": "Q1",
+      "native_question_message_id": 15138,
+      "native_question_timestamp": 1790963833.5374658,
+      "native_answer_message_id": 15141,
+      "native_answer_timestamp": 1790963988.289,
+      "native_answer_platform_message_id": "1555640460935041045",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q2",
+      "native_question_message_id": 15138,
+      "native_question_timestamp": 1790963833.5374658,
+      "native_answer_message_id": 15143,
+      "native_answer_timestamp": 1790964009.8643928,
+      "native_answer_platform_message_id": "1555640539146092717",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q3",
+      "native_question_message_id": 15138,
+      "native_question_timestamp": 1790963833.5374658,
+      "native_answer_message_id": 15145,
+      "native_answer_timestamp": 1790964031.8751976,
+      "native_answer_platform_message_id": "1555640631207002224",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q4",
+      "native_question_message_id": 15148,
+      "native_question_timestamp": 1790964069.7540152,
+      "native_answer_message_id": 15157,
+      "native_answer_timestamp": 1790964564.176,
+      "native_answer_platform_message_id": "1555642876380184586",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q5",
+      "native_question_message_id": 15148,
+      "native_question_timestamp": 1790964069.7540152,
+      "native_answer_message_id": 15157,
+      "native_answer_timestamp": 1790964564.176,
+      "native_answer_platform_message_id": "1555642876380184586",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q6",
+      "native_question_message_id": 15148,
+      "native_question_timestamp": 1790964069.7540152,
+      "native_answer_message_id": 15165,
+      "native_answer_timestamp": 1790964589.9059527,
+      "native_answer_platform_message_id": "1555642969170772079",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q7",
+      "native_question_message_id": 15171,
+      "native_question_timestamp": 1790964635.732249,
+      "native_answer_message_id": 15172,
+      "native_answer_timestamp": 1790965129.871,
+      "native_answer_platform_message_id": "1555645249076859021",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q8",
+      "native_question_message_id": 15171,
+      "native_question_timestamp": 1790964635.732249,
+      "native_answer_message_id": 15172,
+      "native_answer_timestamp": 1790965129.871,
+      "native_answer_platform_message_id": "1555645249076859021",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q9",
+      "native_question_message_id": 15171,
+      "native_question_timestamp": 1790964635.732249,
+      "native_answer_message_id": 15172,
+      "native_answer_timestamp": 1790965129.871,
+      "native_answer_platform_message_id": "1555645249076859021",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q10",
+      "native_question_message_id": 15171,
+      "native_question_timestamp": 1790964635.732249,
+      "native_answer_message_id": 15172,
+      "native_answer_timestamp": 1790965129.871,
+      "native_answer_platform_message_id": "1555645249076859021",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q11",
+      "native_question_message_id": 15173,
+      "native_question_timestamp": 1790965166.7364252,
+      "native_answer_message_id": 15174,
+      "native_answer_timestamp": 1790965605.807,
+      "native_answer_platform_message_id": "1555647245297254421",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q12",
+      "native_question_message_id": 15173,
+      "native_question_timestamp": 1790965166.7364252,
+      "native_answer_message_id": 15174,
+      "native_answer_timestamp": 1790965605.807,
+      "native_answer_platform_message_id": "1555647245297254421",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q13",
+      "native_question_message_id": 15173,
+      "native_question_timestamp": 1790965166.7364252,
+      "native_answer_message_id": 15174,
+      "native_answer_timestamp": 1790965605.807,
+      "native_answer_platform_message_id": "1555647245297254421",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q14",
+      "native_question_message_id": 15173,
+      "native_question_timestamp": 1790965166.7364252,
+      "native_answer_message_id": 15174,
+      "native_answer_timestamp": 1790965605.807,
+      "native_answer_platform_message_id": "1555647245297254421",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q15",
+      "native_question_message_id": 15175,
+      "native_question_timestamp": 1790965654.8675313,
+      "native_answer_message_id": 15176,
+      "native_answer_timestamp": 1790966480.952,
+      "native_answer_platform_message_id": "1555650915921567804",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q16",
+      "native_question_message_id": 15175,
+      "native_question_timestamp": 1790965654.8675313,
+      "native_answer_message_id": 15176,
+      "native_answer_timestamp": 1790966480.952,
+      "native_answer_platform_message_id": "1555650915921567804",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q17",
+      "native_question_message_id": 15175,
+      "native_question_timestamp": 1790965654.8675313,
+      "native_answer_message_id": 15176,
+      "native_answer_timestamp": 1790966480.952,
+      "native_answer_platform_message_id": "1555650915921567804",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q18",
+      "native_question_message_id": 15175,
+      "native_question_timestamp": 1790965654.8675313,
+      "native_answer_message_id": 15176,
+      "native_answer_timestamp": 1790966480.952,
+      "native_answer_platform_message_id": "1555650915921567804",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q19",
+      "native_question_message_id": 15177,
+      "native_question_timestamp": 1790966529.5322192,
+      "native_answer_message_id": 15180,
+      "native_answer_timestamp": 1790966753.547,
+      "native_answer_platform_message_id": "1555652059267735564",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q20",
+      "native_question_message_id": 15177,
+      "native_question_timestamp": 1790966529.5322192,
+      "native_answer_message_id": 15180,
+      "native_answer_timestamp": 1790966753.547,
+      "native_answer_platform_message_id": "1555652059267735564",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q21",
+      "native_question_message_id": 15177,
+      "native_question_timestamp": 1790966529.5322192,
+      "native_answer_message_id": 15180,
+      "native_answer_timestamp": 1790966753.547,
+      "native_answer_platform_message_id": "1555652059267735564",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q22",
+      "native_question_message_id": 15177,
+      "native_question_timestamp": 1790966529.5322192,
+      "native_answer_message_id": 15180,
+      "native_answer_timestamp": 1790966753.547,
+      "native_answer_platform_message_id": "1555652059267735564",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q23",
+      "native_question_message_id": 15198,
+      "native_question_timestamp": 1790966835.535619,
+      "native_answer_message_id": 15245,
+      "native_answer_timestamp": 1790967270.327,
+      "native_answer_platform_message_id": "1555654226800287906",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q24",
+      "native_question_message_id": 15198,
+      "native_question_timestamp": 1790966835.535619,
+      "native_answer_message_id": 15245,
+      "native_answer_timestamp": 1790967270.327,
+      "native_answer_platform_message_id": "1555654226800287906",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q25",
+      "native_question_message_id": 15198,
+      "native_question_timestamp": 1790966835.535619,
+      "native_answer_message_id": 15245,
+      "native_answer_timestamp": 1790967270.327,
+      "native_answer_platform_message_id": "1555654226800287906",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q26",
+      "native_question_message_id": 15249,
+      "native_question_timestamp": 1790967339.7461753,
+      "native_answer_message_id": 15250,
+      "native_answer_timestamp": 1790967470.017,
+      "native_answer_platform_message_id": "1555655064360718367",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q27",
+      "native_question_message_id": 15249,
+      "native_question_timestamp": 1790967339.7461753,
+      "native_answer_message_id": 15250,
+      "native_answer_timestamp": 1790967470.017,
+      "native_answer_platform_message_id": "1555655064360718367",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q28",
+      "native_question_message_id": 15262,
+      "native_question_timestamp": 1790967923.873105,
+      "native_answer_message_id": 15263,
+      "native_answer_timestamp": 1790968122.436,
+      "native_answer_platform_message_id": "1555657800804208840",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q29",
+      "native_question_message_id": 15249,
+      "native_question_timestamp": 1790967339.7461753,
+      "native_answer_message_id": 15252,
+      "native_answer_timestamp": 1790967494.645075,
+      "native_answer_platform_message_id": null,
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q30",
+      "native_question_message_id": 15264,
+      "native_question_timestamp": 1790968165.7042143,
+      "native_answer_message_id": 15265,
+      "native_answer_timestamp": 1790968331.06,
+      "native_answer_platform_message_id": "1555658675836948572",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q31",
+      "native_question_message_id": 15264,
+      "native_question_timestamp": 1790968165.7042143,
+      "native_answer_message_id": 15265,
+      "native_answer_timestamp": 1790968331.06,
+      "native_answer_platform_message_id": "1555658675836948572",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q32",
+      "native_question_message_id": 15264,
+      "native_question_timestamp": 1790968165.7042143,
+      "native_answer_message_id": 15265,
+      "native_answer_timestamp": 1790968331.06,
+      "native_answer_platform_message_id": "1555658675836948572",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q33",
+      "native_question_message_id": 15264,
+      "native_question_timestamp": 1790968165.7042143,
+      "native_answer_message_id": 15265,
+      "native_answer_timestamp": 1790968331.06,
+      "native_answer_platform_message_id": "1555658675836948572",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q34",
+      "native_question_message_id": 15280,
+      "native_question_timestamp": 1790968409.965355,
+      "native_answer_message_id": 15308,
+      "native_answer_timestamp": 1790968559.616,
+      "native_answer_platform_message_id": "1555659634470297633",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q35",
+      "native_question_message_id": 15280,
+      "native_question_timestamp": 1790968409.965355,
+      "native_answer_message_id": 15308,
+      "native_answer_timestamp": 1790968559.616,
+      "native_answer_platform_message_id": "1555659634470297633",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q36",
+      "native_question_message_id": 15280,
+      "native_question_timestamp": 1790968409.965355,
+      "native_answer_message_id": 15308,
+      "native_answer_timestamp": 1790968559.616,
+      "native_answer_platform_message_id": "1555659634470297633",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q37",
+      "native_question_message_id": 15309,
+      "native_question_timestamp": 1790968628.381316,
+      "native_answer_message_id": 15310,
+      "native_answer_timestamp": 1790968708.863,
+      "native_answer_platform_message_id": "1555660260457451612",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q38",
+      "native_question_message_id": 15309,
+      "native_question_timestamp": 1790968628.381316,
+      "native_answer_message_id": 15310,
+      "native_answer_timestamp": 1790968708.863,
+      "native_answer_platform_message_id": "1555660260457451612",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    },
+    {
+      "question_id": "Q39",
+      "native_question_message_id": 15309,
+      "native_question_timestamp": 1790968628.381316,
+      "native_answer_message_id": 15310,
+      "native_answer_timestamp": 1790968708.863,
+      "native_answer_platform_message_id": "1555660260457451612",
+      "exact_question_and_answer_match": true,
+      "actual_answer_after_question": true
+    }
+  ],
+  "historical_sufficiency": {
+    "id": 15311,
+    "role": "assistant",
+    "content": "**We have a coherent design.** This is a continuous product-development factory, with human collaboration during grilling and autonomous execution afterward.\n\nHere is the consolidated agreement. **Nothing has been built or started yet.**\n\n## 1. Product and iteration lifecycle\n\n- You supply or approve the product idea.\n- **Grilling starts in the originating conversation.** The agent recommends choices; you make the product and technical decisions.\n- The agent decides when it has enough clarity to finish grilling.\n- Specs cover the **whole-product vision and the current milestone**, including requirements, acceptance criteria, constraints, non-goals, and technical decisions. Preserve the interview\u2019s questions and answers for traceability.\n- Specs live in the product repository under **`docs/`**.\n- Generate executable tickets **only for the current milestone**.\n- Implementation begins immediately after specs and tickets are generated\u2014**no additional batch-approval checkpoint**.\n- After completing the iteration and verifying healthy deployment, report the outcome and invite you into the next grilling.\n- Wait for your input before defining the next iteration. **The product is never declared permanently finished.**\n\n## 2. Ticket execution\n\n**Select an unblocked ticket \u2192 implement and test \u2192 simplify \u2192 independent review \u2192 fix findings \u2192 merge into `main` \u2192 monitor CI/CD and deployment.**\n\n- Initially, **one active product iteration and one active implementation ticket**.\n- Independent reviews may run in parallel.\n- A ticket must satisfy its description, feature, changes, and requirements, with all required tests green.\n- **A ticket closes only after it is merged into `main`.**\n- Agents merge autonomously through the controlled merge path.\n- The controller verifies actual results; a worker\u2019s success claim is not sufficient.\n\n## 3. Bugs, blockers, and broken `main`\n\n- Bug issues use the same required format and delivery lifecycle as feature tickets, with reproduction information where applicable.\n- Bugs blocking the current milestone join the iteration. Unrelated, non-blocking bugs wait for the next grilling.\n- Ticket agents attempt repairs and iterate; **they decide when they are stuck**.\n- A separate debug agent investigates and produces an evidence-backed report with attempted fixes, likely causes, options, and a recommendation.\n- **You choose the direction for resolving the blocker.**\n- Block the ticket and its dependents; continue independent work where possible.\n- Broken `main` takes priority: **freeze ordinary merges**, allow recovery changes, and dispatch a repair agent.\n- Recovery agents choose the appropriate response, including roll-forward or a safe revert. Reopen work whose requirements are no longer delivered.\n- Resume ordinary work only once `main` and deployment are healthy.\n\n## 4. State and operating interface\n\n- **GitHub is the default platform**, using the configured account unless you specify another account or platform.\n- Issues and their repository project board are authoritative for work items; PRs deliver changes.\n- Support approved new products and explicitly selected existing repositories. New repositories are private by default.\n- The factory runs in the background on this server.\n- Return to the originating thread only for needed decisions, problems, or the iteration-completion report and next-grilling invitation.\n- **Pause is the normal interruption:** checkpoint active work and prevent further merges. Preserve emergency-stop capability.\n- After restart, reconcile repository, board, execution, and CI/CD state before resuming.\n- Material requirement changes pause affected work until the specs and tickets are updated.\n\n## 5. Implementation and security\n\n- A **Python deterministic controller**, outside Hermes\u2019s core, supervised with persistent execution state.\n- Dedicated Hermes role profiles launch fresh workers for implementation, simplification, review, debugging, and `main` repair.\n- Start with the existing approved model/provider configuration; allow explicit per-role configuration.\n- Run entire workers inside isolated containers\u2014not merely their terminal commands.\n- Restrict mounts, tools, filesystem access, and credentials by role. No Docker socket, unrelated personal credentials, or deployment credentials in workers.\n- GitHub writes use controlled operations; CI/CD owns deployment credentials.\n- Required quality and security gates must pass. Agents cannot bypass checks, weaken security policy, or disable branch protection.\n- Legitimate test changes require independent review against the requirements.\n- Existing subscription allowances may be used. **Chargeable usage or new financial commitments require approval with a clear scope and ceiling.** No silent paid fallback.\n\n## 6. Validation and boundaries\n\n- Authorize a **private disposable GitHub validation repository**, strictly for exercising the factory.\n- Validate the real delivery loop plus review rejection, blocked-ticket diagnosis, broken-`main` recovery, pause/restart, and spending approval.\n- Verify role isolation in execution, rather than trusting configuration or prompts.\n- **No factory-beta code, configuration, skills, plans, or history will be loaded or reused.**\n- Concurrent product iterations and self-invented products are outside the initial scope.\n\nRemaining engineering prerequisites\u2014such as GitHub Projects permissions and the exact sandbox wiring\u2014must be verified during implementation. They are not assumed to work.\n\n**Does this match our shared understanding, and do you authorize creating the fresh factory repository, writing its specs and tickets, and beginning implementation under these rules?**",
+    "timestamp": 1790968796.9516816
+  },
+  "actual_selected_source_reads": [
+    {
+      "message_id": 19677,
+      "result_message_id": 19680,
+      "tool_call_id": "call_Y1XzaRVGaxQo7g8Plmj46B6O",
+      "tool": "read_file",
+      "path": "/home/ops/.hermes/skills/to-spec/SKILL.md",
+      "timestamp": 1791016391.5757036,
+      "rendered_content_matches_selected_source": true,
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "loaded_instructions": "---\nname: to-spec\ndescription: \"Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.\"\ndisable-model-invocation: true\n---\n\nThis skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.\n\nThe issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.\n\n## Process\n\n1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the spec, and respect any ADRs in the area you're touching.\n\n2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.\n\nCheck with the user that these seams match their expectations.\n\n3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.\n\n<spec-template>\n\n## Problem Statement\n\nThe problem that the user is facing, from the user's perspective.\n\n## Solution\n\nThe solution to the problem, from the user's perspective.\n\n## User Stories\n\nA LONG, numbered list of user stories. Each user story should be in the format of:\n\n1. As an <actor>, I want a <feature>, so that <benefit>\n\n<user-story-example>\n1. As a mobile bank customer, I want to see balance on my accounts, so that I can make better informed decisions about my spending\n</user-story-example>\n\nThis list of user stories should be extremely extensive and cover all aspects of the feature.\n\n## Implementation Decisions\n\nA list of implementation decisions that were made. This can include:\n\n- The modules that will be built/modified\n- The interfaces of those modules that will be modified\n- Technical clarifications from the developer\n- Architectural decisions\n- Schema changes\n- API contracts\n- Specific interactions\n\nDo NOT include specific file paths or code snippets. They may end up being outdated very quickly.\n\nException: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.\n\n## Testing Decisions\n\nA list of testing decisions that were made. Include:\n\n- A description of what makes a good test (only test external behavior, not implementation details)\n- Which modules will be tested\n- Prior art for the tests (i.e. similar types of tests in the codebase)\n\n## Out of Scope\n\nA description of the things that are out of scope for this spec.\n\n## Further Notes\n\nAny further notes about the feature.\n\n</spec-template>\n"
+    },
+    {
+      "message_id": 20085,
+      "result_message_id": 20086,
+      "tool_call_id": "call_MBLfE0GvFdqrzCsAkePpinOb",
+      "tool": "read_file",
+      "path": "/home/ops/.hermes/skills/to-spec/SKILL.md",
+      "timestamp": 1791018467.7370968,
+      "rendered_content_matches_selected_source": true,
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "loaded_instructions": "---\nname: to-spec\ndescription: \"Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.\"\ndisable-model-invocation: true\n---\n\nThis skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.\n\nThe issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.\n\n## Process\n\n1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the spec, and respect any ADRs in the area you're touching.\n\n2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.\n\nCheck with the user that these seams match their expectations.\n\n3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.\n\n<spec-template>\n\n## Problem Statement\n\nThe problem that the user is facing, from the user's perspective.\n\n## Solution\n\nThe solution to the problem, from the user's perspective.\n\n## User Stories\n\nA LONG, numbered list of user stories. Each user story should be in the format of:\n\n1. As an <actor>, I want a <feature>, so that <benefit>\n\n<user-story-example>\n1. As a mobile bank customer, I want to see balance on my accounts, so that I can make better informed decisions about my spending\n</user-story-example>\n\nThis list of user stories should be extremely extensive and cover all aspects of the feature.\n\n## Implementation Decisions\n\nA list of implementation decisions that were made. This can include:\n\n- The modules that will be built/modified\n- The interfaces of those modules that will be modified\n- Technical clarifications from the developer\n- Architectural decisions\n- Schema changes\n- API contracts\n- Specific interactions\n\nDo NOT include specific file paths or code snippets. They may end up being outdated very quickly.\n\nException: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.\n\n## Testing Decisions\n\nA list of testing decisions that were made. Include:\n\n- A description of what makes a good test (only test external behavior, not implementation details)\n- Which modules will be tested\n- Prior art for the tests (i.e. similar types of tests in the codebase)\n\n## Out of Scope\n\nA description of the things that are out of scope for this spec.\n\n## Further Notes\n\nAny further notes about the feature.\n\n</spec-template>\n"
+    },
+    {
+      "message_id": 20106,
+      "result_message_id": 20107,
+      "tool_call_id": "call_hnpK0NnI0nJMxon9v19XN5x5",
+      "tool": "read_file",
+      "path": "/home/ops/.hermes/skills/grill-me/SKILL.md",
+      "timestamp": 1791018764.074097,
+      "rendered_content_matches_selected_source": true,
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+      "loaded_instructions": "---\nname: grill-me\ndescription: A relentless interview to sharpen a plan or design.\ndisable-model-invocation: true\n---\n\nCall the Skill tool with \"grilling\".\n"
+    },
+    {
+      "message_id": 20106,
+      "result_message_id": 20108,
+      "tool_call_id": "call_q1HWN5Thtjfe0pQCpr1Rz9Od",
+      "tool": "read_file",
+      "path": "/home/ops/.hermes/skills/grilling/SKILL.md",
+      "timestamp": 1791018764.074097,
+      "rendered_content_matches_selected_source": true,
+      "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+      "loaded_instructions": "---\nname: grilling\ndescription: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.\n---\n\nInterview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.\n\nWork the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.\n\nFormat a round like so:\n\n```\n\u2753 **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>\n\n\u27a1\ufe0f <your recommended answer>\n\n---\n\n\u2753 **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>\n\n\u27a1\ufe0f <your recommended answer>\n```\n\nEach round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.\n\nFinding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment (filesystem, tools, etc.), dispatch a sub-agent to find it; don't ask the user for anything you could look up yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.\n\nThe session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.\n"
+    }
+  ],
+  "actual_to_spec_document_synthesis": [
+    {
+      "message_id": 20128,
+      "result_message_id": 20129,
+      "tool_call_id": "call_2YIzZkbObceJ7fXoplOwmARc",
+      "tool": "write_file",
+      "path": "/home/ops/.hermes/fresh-forge-execution/ticket-7-simple/live-inputs/vision.md",
+      "timestamp": 1791019025.8772147,
+      "sha256": "c3dc1faa5864530a530fa9c71741d23816b0f17a4f7632104b0707b09e134b04",
+      "content": "# Agentic Forge \u2014 whole-product vision\n\nAntoine supplies or explicitly approves a product idea. Forge works with him in the originating conversation: challenge assumptions, recommend choices, and leave product and technical decisions to Antoine. The resolved interview becomes usable specifications, not a transcript disguised as a build plan.\n\nThe intended long-term loop is **grill-me \u2192 to-spec \u2192 to-tickets \u2192 implement/test \u2192 simplify \u2192 independent Standards/Spec review \u2192 controlled merge \u2192 integrated verification**. Only the finite current milestone becomes executable work. Completing it invites another interview for the same product; absent user input never authorizes a self-invented iteration.\n\n## Operating model\n\nGitHub is the shared handoff: versioned specifications and decision records, issues/dependencies for work, and PRs for delivery. A small durable control record correlates project, iteration, stage and evidence; it does not replace GitHub specifications.\n\nQ30 accepted Python for a deterministic controller outside Hermes core, initially on the existing server. Q8 keeps each product's programming language and user-facing language as separate operator decisions. This documentation-only validation has no product UI and makes no locale choice.\n\nFuture engineering uses fresh role workers with enforced whole-process isolation. Independent review, tests, CI and controlled integration remain mandatory. Ordinary merges freeze while main is broken; gated recovery is permitted (Q16 clarified by Q19). Stuck engineering yields an independent diagnostic report for Antoine to choose the direction. No new spending or chargeable fallback is authorized, and workers do not inherit personal credentials or beta context.\n\n## Finite validation milestone\n\n**Only ticket #7's planning slice is current:** use the actual selected grill-me/grilling instructions against the genuine originating conversation, run to-spec on its resolved decisions, publish the milestone, vision and original provenance to the approved private validation repository, and read back the exact immutable docs and ready-for-agent specification issue. The handoff contains GitHub references and leaves execution disabled.\n\nTicket #8 owns to-tickets. Ticket reservation, engineering workers, scheduling, model admission, deployment/recovery execution and the next iteration are future capabilities here\u2014not implicit executable backlog.\n\n## Traceability\n\n[Provenance](provenance.md) preserves Q1\u2013Q39, recommendations, literal answers and sources. Q6/Q11 remove extra routine approval checkpoints; Q17/Q27 select GitHub; Q26 restricts execution to the current milestone; Q30 selects Python; Q37/Q38 preserve isolation and unweakened gates. [Skill execution](skill-execution.json) records the actual selected-instruction loading and synthesis trace for this acceptance run.\n",
+      "write_verified": true
+    },
+    {
+      "message_id": 20128,
+      "result_message_id": 20130,
+      "tool_call_id": "call_z99Cf4qRswiWhkFNGBtKqiJu",
+      "tool": "write_file",
+      "path": "/home/ops/.hermes/fresh-forge-execution/ticket-7-simple/live-inputs/milestone.md",
+      "timestamp": 1791019025.8772147,
+      "sha256": "b4862b38fd29e7fd511974720ae04e62d86becf9760fd301debe97a1d52540e8",
+      "content": "## Problem Statement\n\nAntoine supplies an idea and expects Forge to challenge it with the installed grill-me skill, then synthesize usable specifications in GitHub. The unfinished #7 work instead built a second interview/semantic-resolution engine. Categorized quotations do not resolve accepted recommendations or define a finite buildable milestone, and private local transcripts cannot be the next stage's handoff.\n\n## Solution\n\nUse the actual selected **grill-me \u2192 grilling \u2192 to-spec** instructions in the originating conversation. Ask the currently unblocked decision frontier with recommendations, wait for real answers, and preserve Antoine's authority over product, stack, programming-language and user-facing-language choices. Missing input keeps planning pending; the agent judges sufficient clarification.\n\nWhen sufficient, follow to-spec: explore the current code, use the already agreed highest public testing seam, and synthesize a finite milestone in prose. Automatically publish its matching ready-for-agent issue, a separate whole-product vision and original decision provenance in the onboarded GitHub repository, then read back the exact immutable revision and issue. No additional routine approval or operator command advances synthesis/publication. Stop after this GitHub handoff: #8 owns to-tickets.\n\n## User Stories\n\n1. As Antoine, I want the real grill-me entry point and grilling dependency used so that the installed method is not replaced by another interview engine.\n2. As Antoine, I want numbered frontier questions and recommendations so that dependent decisions are resolved coherently.\n3. As Antoine, I want Forge to wait for my actual answers so that silence never becomes consent.\n4. As Antoine, I want recommendations separate from literal answers so that accepted recommendations become explicit choices without rewriting my words.\n5. As Antoine, I want later clarifications retained with their sources so that contradictions are resolved visibly.\n6. As Antoine, I want missing choices to remain pending in the originating conversation so that a restart invents neither decisions nor destinations.\n7. As Antoine, I want programming language, user-facing language applicability, stack and testing decisions resolved before synthesis so that developers do not guess them.\n8. As Antoine, I want automatic transition when clarification is sufficient so that routine confirmations do not become an extra approval loop.\n9. As Antoine, I want to-spec to synthesize real prose so that the result describes behavior, boundaries and verification rather than answer categories.\n10. As Antoine, I want future vision separate from the finite milestone so that future features do not become executable backlog.\n11. As Antoine, I want the specification issue and versioned documentation in GitHub so that the next stage needs only GitHub references.\n12. As Antoine, I want exact immutable document and issue readback so that stale, edited or mismatched publication cannot complete planning.\n13. As Antoine, I want explicit source/dependency paths and hashes so that duplicate installed names cannot select another copy.\n14. As Antoine, I want repeated commands and restarts to preserve the handoff so that completion does not duplicate work or lose correlation.\n15. As Antoine, I want this slice to stop before to-tickets/worker execution so that #8 and later safety slices retain their own responsibilities.\n16. As Antoine, I want integrated intake/onboarding tests, independent review and CI preserved so that simplicity does not weaken delivery or security.\n\n## Implementation Decisions\n\n- Reuse the trusted Python CLI and durable iteration record. A thin same-conversation assignment composes the exact selected instructions; a read-only completion operation verifies the GitHub handoff. No second interview engine, generic skill framework or new publisher.\n- The conversational agent executes grilling and prose synthesis. A heading validator, source catalog or successful process exit does not prove that method. Retain actual loading/tool execution correlated to the assignment, genuine interview, adaptation and published revision.\n- Preserve real questions, recommendations, literal answers, actor/message references and interpretations separately. Expand accepted recommendations into concrete decisions without changing the original answer. Q19 clarifies Q16's freeze: ordinary merges stop while gated recovery may proceed.\n- Q30 accepted Python for the controller; Q17/Q27 selected GitHub. Q8 keeps per-product programming and user-facing language decisions with the user. This documentation-only validation has no UI or separately chosen locale.\n- Q6/Q11 adapt away only routine shared-understanding/spec/test-seam/batch confirmations. Unresolved substantive choices, spending approval and unchanged security/review gates still pause affected work.\n- Resolve explicit selected planning sources and their real dependency closure; pin exact content. Missing, ambiguous, altered or unavailable inputs invalidate affected evidence. Do not select unrelated future-stage skills.\n- Publish adjacent milestone, vision and provenance documents at an immutable Git commit in the verified repository. The ready-for-agent issue body exactly matches the milestone snapshot. Preserve the parent specification issue.\n- Completion records only GitHub issue/document references, repository and commit identity, and leaves execution disabled. Later ticket synthesis reads GitHub, not hidden local interview state.\n\n## Testing Decisions\n\nThe highest shared seam is the existing public lifecycle CLI. Use subprocesses, durable SQLite and deterministic HTTP fixtures following integrated intake/onboarding prior art; test observable behavior rather than private helpers. Cover unanswered input, exact origin/operator, explicit source/dependency selection, changed pins, malformed input, idempotence/process restart, stale assignments, mismatched repository/issue/documents, and disabled execution. Preserve all integrated regressions.\n\nLive acceptance reuses the genuine completed Q1\u2013Q39 conversation, not invented replacement answers. Retain its actual grill-me invocation, grilling load, numbered recommendations, real answers, clarifications and final sufficiency judgment. The executing assistant loads exact selected to-spec instructions, synthesizes these documents from the resolved discussion, and proceeds to controlled publication/readback without another user command or externally supplied spec files.\n\nKeep genuine host GitHub publication/readback separate from credential-blind network-none CLI replay. Restore the exact originally persisted state for completion/restart. Run full tests in non-root isolation with normal and alternate TMPDIR layouts, Python 3.11/3.13 CI, a fresh actual simplify-code pass and separate fresh read-only code-review Standards/Spec axes.\n\n### Acceptance Criteria\n\n- Actual selected-instruction loading and skill-guided work are observable; real answers and decision ownership are preserved, and missing input stays pending.\n- Synthesized prose retains technical applicability, requirements, finite scope, constraints, non-goals, testing, acceptance and traceability; future vision stays separate.\n- The ready-for-agent issue and immutable documents read back exactly and hand usable GitHub references to #8; mismatches cannot complete planning.\n- Only routine confirmations are adapted away. Required skill/dependency pins, review, security and spending boundaries remain.\n- Integrated behavior/tests and candidate/integrated CI pass before #7 closes. No to-tickets or worker dispatch occurs in this planning slice.\n\n## Out of Scope\n\nRunning to-tickets; generating a ticket batch or Projects dependencies; reserving/dispatching engineering work; building a scheduler/model broker; production deployment; invented products/iterations; paid resources/fallback; generic skill graphs; custom semantic-resolution schemas; and editing or closing the parent spec. These are #8 or later slices, not this milestone.\n\n## Further Notes\n\nThe boundary follows Antoine's current direct instruction: **grill-me \u2192 to-spec \u2192 GitHub; #8 owns to-tickets; keep it simple**. Reuse of the genuine historical interview is explicit; no new user answers are claimed. [Provenance](provenance.md) retains the exact Q1\u2013Q39 sources and interpretations. [Vision](vision.md) describes future capabilities without dispatching them. [Skill execution](skill-execution.json) records selected-instruction loading and synthesis evidence for acceptance.\n",
+      "write_verified": true
+    }
+  ],
+  "not_a_new_interview": true,
+  "publication_binding": "This receipt and the exact synthesized bytes are published together under docs_path; the parent separately verifies the immutable Git tree and specification issue",
+  "limitations": "Original live interview is historical and reused. Native continuation is authorized by the current user; this receipt does not claim a second interview, an unattended conversational worker or a fully running factory. CLI HTTP replay remains separately labeled offline."
+}
