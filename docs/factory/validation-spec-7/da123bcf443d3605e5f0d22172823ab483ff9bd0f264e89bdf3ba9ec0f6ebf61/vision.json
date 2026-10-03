@@ -1,0 +1,287 @@
+{
+  "decisions": [
+    {
+      "category": "vision",
+      "id": "D1",
+      "question_id": "Q1",
+      "scope": "future",
+      "value": "\"Regarding question one, I give it an idea it grills me and I receive a set of specs of all the questions has already asked me with the girl me skill\""
+    },
+    {
+      "category": "requirements",
+      "id": "D2",
+      "question_id": "Q2",
+      "scope": "current",
+      "value": "\"Question two will building this for me. It's for me to operate and build products\""
+    },
+    {
+      "category": "non_goals",
+      "id": "D3",
+      "question_id": "Q3",
+      "scope": "current",
+      "value": "\"For now, I don't see any hard limits except start a new project without my approval or my idea.\""
+    },
+    {
+      "category": "vision",
+      "id": "D4",
+      "question_id": "Q4",
+      "scope": "future",
+      "value": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+    },
+    {
+      "category": "milestone",
+      "id": "D5",
+      "question_id": "Q5",
+      "scope": "current",
+      "value": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+    },
+    {
+      "category": "constraints",
+      "id": "D6",
+      "question_id": "Q6",
+      "scope": "current",
+      "value": "\"The agent is autonomous with deciding what it needs with me, and therefore decides when the grilling is finished.\""
+    },
+    {
+      "category": "constraints",
+      "id": "D7",
+      "question_id": "Q7",
+      "scope": "current",
+      "value": "Q7: spending must always be asked for approval\nDeploying must always be secure."
+    },
+    {
+      "category": "user_facing_language",
+      "id": "D8",
+      "question_id": "Q8",
+      "scope": "current",
+      "value": "Q8: agent recommend and decision is with the user."
+    },
+    {
+      "category": "vision",
+      "id": "D9",
+      "question_id": "Q9",
+      "scope": "future",
+      "value": "Q9: next grilling we’ll be for next iteration of the product. A product is never finished."
+    },
+    {
+      "category": "acceptance",
+      "id": "D10",
+      "question_id": "Q10",
+      "scope": "current",
+      "value": "Q10: fully developed is maybe the wrong wording. The  step is finished when the tickets created by the specs and the grilling are all finished. \nA ticket is finished when all tests are green. It answers the ticket description/feature/changes/requirements."
+    },
+    {
+      "category": "requirements",
+      "id": "D11",
+      "question_id": "Q11",
+      "scope": "current",
+      "value": "Q11: implementation starts right away. If necessary the user will stop it."
+    },
+    {
+      "category": "requirements",
+      "id": "D12",
+      "question_id": "Q12",
+      "scope": "current",
+      "value": "Q12: a ticket is closed only when it is merged on main. If it is not merged, it doesn’t exist. The agents must be able to merge the tickets autonomously."
+    },
+    {
+      "category": "requirements",
+      "id": "D13",
+      "question_id": "Q13",
+      "scope": "current",
+      "value": "Q13: great question. A debug agent comes in and investigates. Create a report and the user can make the decision for the direction the project has to take to resolve the ticket being stuck."
+    },
+    {
+      "category": "testing",
+      "id": "D14",
+      "question_id": "Q14",
+      "scope": "current",
+      "value": "Q14: quality gates, security checks must pass in CI and then CD. Agents must monitor their deployment in main. If it fails they need to fix it."
+    },
+    {
+      "category": "requirements",
+      "id": "D15",
+      "question_id": "Q15",
+      "scope": "current",
+      "value": "Q15: agents responsible for the ticket decides when it is stuck. It still has to try to fix it and iterate."
+    },
+    {
+      "category": "requirements",
+      "id": "D16",
+      "question_id": "Q16",
+      "scope": "current",
+      "value": "Q16: agent comes in to fix main. No commit can be merged on main. Roll forward is a possible quick solution if possible. Agents decide on the situation."
+    },
+    {
+      "category": "stack",
+      "id": "D17",
+      "question_id": "Q17",
+      "scope": "current",
+      "value": "Q17: tickets are in repository projects board. Specs are in code under docs/"
+    },
+    {
+      "category": "stack",
+      "id": "D18",
+      "question_id": "Q18",
+      "scope": "current",
+      "value": "Q18: proceed as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D19",
+      "question_id": "Q19",
+      "scope": "current",
+      "value": "Q19: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D20",
+      "question_id": "Q20",
+      "scope": "current",
+      "value": "Q20: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D21",
+      "question_id": "Q21",
+      "scope": "current",
+      "value": "Q21: grill me starts from conversation. Factory runs in the background. Hermes comes back to the thread if it needs something or there is an issue. Otherwise no interactions."
+    },
+    {
+      "category": "vision",
+      "id": "D22",
+      "question_id": "Q22",
+      "scope": "future",
+      "value": "Q22: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D23",
+      "question_id": "Q23",
+      "scope": "current",
+      "value": "Q23: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D24",
+      "question_id": "Q24",
+      "scope": "current",
+      "value": "Q24: as recommended"
+    },
+    {
+      "category": "requirements",
+      "id": "D25",
+      "question_id": "Q25",
+      "scope": "current",
+      "value": "Q25: pause. as recommended"
+    },
+    {
+      "category": "milestone",
+      "id": "D26",
+      "question_id": "Q26",
+      "scope": "current",
+      "value": "Q26: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D27",
+      "question_id": "Q27",
+      "scope": "current",
+      "value": "Q27: GitHub repo is the platform. User must specify if there is a different account or platform."
+    },
+    {
+      "category": "stack",
+      "id": "D28",
+      "question_id": "Q28",
+      "scope": "current",
+      "value": "Okay proceed with workers as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D29",
+      "question_id": "Q29",
+      "scope": "current",
+      "value": "Q29: as recommended"
+    },
+    {
+      "category": "programming_language",
+      "id": "D30",
+      "question_id": "Q30",
+      "scope": "current",
+      "value": "Q30: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D31",
+      "question_id": "Q31",
+      "scope": "current",
+      "value": "Q31: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D32",
+      "question_id": "Q32",
+      "scope": "current",
+      "value": "Q32: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D33",
+      "question_id": "Q33",
+      "scope": "current",
+      "value": "Q33: as recommended"
+    },
+    {
+      "category": "requirements",
+      "id": "D34",
+      "question_id": "Q34",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D35",
+      "question_id": "Q35",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D36",
+      "question_id": "Q36",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D37",
+      "question_id": "Q37",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    },
+    {
+      "category": "testing",
+      "id": "D38",
+      "question_id": "Q38",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    },
+    {
+      "category": "acceptance",
+      "id": "D39",
+      "question_id": "Q39",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    }
+  ],
+  "iteration_id": "validation-spec-7",
+  "origin": {
+    "chat_id": "1555635434036396065",
+    "parent_chat_id": "1552665601510473790",
+    "platform": "discord",
+    "scope_id": "1551691688291074168",
+    "thread_id": "1555635434036396065"
+  },
+  "project_id": "fresh-factory-validation",
+  "repository": "tehioant/agentic-forge-fresh-v1-validation"
+}

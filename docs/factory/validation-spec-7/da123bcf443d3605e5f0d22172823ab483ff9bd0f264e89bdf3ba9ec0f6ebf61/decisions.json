@@ -1,0 +1,810 @@
+{
+  "decisions": [
+    {
+      "category": "vision",
+      "id": "D1",
+      "question_id": "Q1",
+      "scope": "future",
+      "value": "\"Regarding question one, I give it an idea it grills me and I receive a set of specs of all the questions has already asked me with the girl me skill\""
+    },
+    {
+      "category": "requirements",
+      "id": "D2",
+      "question_id": "Q2",
+      "scope": "current",
+      "value": "\"Question two will building this for me. It's for me to operate and build products\""
+    },
+    {
+      "category": "non_goals",
+      "id": "D3",
+      "question_id": "Q3",
+      "scope": "current",
+      "value": "\"For now, I don't see any hard limits except start a new project without my approval or my idea.\""
+    },
+    {
+      "category": "vision",
+      "id": "D4",
+      "question_id": "Q4",
+      "scope": "future",
+      "value": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+    },
+    {
+      "category": "milestone",
+      "id": "D5",
+      "question_id": "Q5",
+      "scope": "current",
+      "value": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+    },
+    {
+      "category": "constraints",
+      "id": "D6",
+      "question_id": "Q6",
+      "scope": "current",
+      "value": "\"The agent is autonomous with deciding what it needs with me, and therefore decides when the grilling is finished.\""
+    },
+    {
+      "category": "constraints",
+      "id": "D7",
+      "question_id": "Q7",
+      "scope": "current",
+      "value": "Q7: spending must always be asked for approval\nDeploying must always be secure."
+    },
+    {
+      "category": "user_facing_language",
+      "id": "D8",
+      "question_id": "Q8",
+      "scope": "current",
+      "value": "Q8: agent recommend and decision is with the user."
+    },
+    {
+      "category": "vision",
+      "id": "D9",
+      "question_id": "Q9",
+      "scope": "future",
+      "value": "Q9: next grilling we’ll be for next iteration of the product. A product is never finished."
+    },
+    {
+      "category": "acceptance",
+      "id": "D10",
+      "question_id": "Q10",
+      "scope": "current",
+      "value": "Q10: fully developed is maybe the wrong wording. The  step is finished when the tickets created by the specs and the grilling are all finished. \nA ticket is finished when all tests are green. It answers the ticket description/feature/changes/requirements."
+    },
+    {
+      "category": "requirements",
+      "id": "D11",
+      "question_id": "Q11",
+      "scope": "current",
+      "value": "Q11: implementation starts right away. If necessary the user will stop it."
+    },
+    {
+      "category": "requirements",
+      "id": "D12",
+      "question_id": "Q12",
+      "scope": "current",
+      "value": "Q12: a ticket is closed only when it is merged on main. If it is not merged, it doesn’t exist. The agents must be able to merge the tickets autonomously."
+    },
+    {
+      "category": "requirements",
+      "id": "D13",
+      "question_id": "Q13",
+      "scope": "current",
+      "value": "Q13: great question. A debug agent comes in and investigates. Create a report and the user can make the decision for the direction the project has to take to resolve the ticket being stuck."
+    },
+    {
+      "category": "testing",
+      "id": "D14",
+      "question_id": "Q14",
+      "scope": "current",
+      "value": "Q14: quality gates, security checks must pass in CI and then CD. Agents must monitor their deployment in main. If it fails they need to fix it."
+    },
+    {
+      "category": "requirements",
+      "id": "D15",
+      "question_id": "Q15",
+      "scope": "current",
+      "value": "Q15: agents responsible for the ticket decides when it is stuck. It still has to try to fix it and iterate."
+    },
+    {
+      "category": "requirements",
+      "id": "D16",
+      "question_id": "Q16",
+      "scope": "current",
+      "value": "Q16: agent comes in to fix main. No commit can be merged on main. Roll forward is a possible quick solution if possible. Agents decide on the situation."
+    },
+    {
+      "category": "stack",
+      "id": "D17",
+      "question_id": "Q17",
+      "scope": "current",
+      "value": "Q17: tickets are in repository projects board. Specs are in code under docs/"
+    },
+    {
+      "category": "stack",
+      "id": "D18",
+      "question_id": "Q18",
+      "scope": "current",
+      "value": "Q18: proceed as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D19",
+      "question_id": "Q19",
+      "scope": "current",
+      "value": "Q19: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D20",
+      "question_id": "Q20",
+      "scope": "current",
+      "value": "Q20: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D21",
+      "question_id": "Q21",
+      "scope": "current",
+      "value": "Q21: grill me starts from conversation. Factory runs in the background. Hermes comes back to the thread if it needs something or there is an issue. Otherwise no interactions."
+    },
+    {
+      "category": "vision",
+      "id": "D22",
+      "question_id": "Q22",
+      "scope": "future",
+      "value": "Q22: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D23",
+      "question_id": "Q23",
+      "scope": "current",
+      "value": "Q23: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D24",
+      "question_id": "Q24",
+      "scope": "current",
+      "value": "Q24: as recommended"
+    },
+    {
+      "category": "requirements",
+      "id": "D25",
+      "question_id": "Q25",
+      "scope": "current",
+      "value": "Q25: pause. as recommended"
+    },
+    {
+      "category": "milestone",
+      "id": "D26",
+      "question_id": "Q26",
+      "scope": "current",
+      "value": "Q26: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D27",
+      "question_id": "Q27",
+      "scope": "current",
+      "value": "Q27: GitHub repo is the platform. User must specify if there is a different account or platform."
+    },
+    {
+      "category": "stack",
+      "id": "D28",
+      "question_id": "Q28",
+      "scope": "current",
+      "value": "Okay proceed with workers as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D29",
+      "question_id": "Q29",
+      "scope": "current",
+      "value": "Q29: as recommended"
+    },
+    {
+      "category": "programming_language",
+      "id": "D30",
+      "question_id": "Q30",
+      "scope": "current",
+      "value": "Q30: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D31",
+      "question_id": "Q31",
+      "scope": "current",
+      "value": "Q31: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D32",
+      "question_id": "Q32",
+      "scope": "current",
+      "value": "Q32: as recommended"
+    },
+    {
+      "category": "stack",
+      "id": "D33",
+      "question_id": "Q33",
+      "scope": "current",
+      "value": "Q33: as recommended"
+    },
+    {
+      "category": "requirements",
+      "id": "D34",
+      "question_id": "Q34",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D35",
+      "question_id": "Q35",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D36",
+      "question_id": "Q36",
+      "scope": "current",
+      "value": "Q34-36: as recommended"
+    },
+    {
+      "category": "constraints",
+      "id": "D37",
+      "question_id": "Q37",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    },
+    {
+      "category": "testing",
+      "id": "D38",
+      "question_id": "Q38",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    },
+    {
+      "category": "acceptance",
+      "id": "D39",
+      "question_id": "Q39",
+      "scope": "current",
+      "value": "Q37-39: as recommended"
+    }
+  ],
+  "expected_revision": 0,
+  "judgment": {
+    "rationale": "The fresh factory Q1-Q39 interview reached the shared design recorded in the original final synthesis and was followed by /to-spec and approval to implement its first milestone. Language policy is retained as Antoine stated it: recommend, with decisions belonging to the user; no fixed language choice for future products is invented. This validation is the factory specification readback, not a new product or next iteration.",
+    "reference": "hermes-session:20261002_173951_e80aca92:message:15311",
+    "sufficient": true
+  },
+  "origin": {
+    "chat_id": "1555635434036396065",
+    "parent_chat_id": "1552665601510473790",
+    "platform": "discord",
+    "scope_id": "1551691688291074168",
+    "thread_id": "1555635434036396065"
+  },
+  "questions": [
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640460935041045",
+        "text": "\"Regarding question one, I give it an idea it grills me and I receive a set of specs of all the questions has already asked me with the girl me skill\""
+      },
+      "challenge": "❓ **Q1 — What does the factory actually produce?**  \nGive me one concrete example: “I give it **X**, it does **Y**, and I receive **Z**.” What would make that first result genuinely useful—not merely an impressive agent demo?",
+      "id": "Q1",
+      "question": "❓ **Q1 — What does the factory actually produce?**  \nGive me one concrete example: “I give it **X**, it does **Y**, and I receive **Z**.” What would make that first result genuinely useful—not merely an impressive agent demo?\n\n➡️ **Recommendation:** Start with one narrow software-delivery flow: an approved task goes in, a tested, review-ready pull request comes out. Treat that as a candidate, not an assumption about your goal.",
+      "recommendation": "**Recommendation:** Start with one narrow software-delivery flow: an approved task goes in, a tested, review-ready pull request comes out. Treat that as a candidate, not an assumption about your goal."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640539146092717",
+        "text": "\"Question two will building this for me. It's for me to operate and build products\""
+      },
+      "challenge": "❓ **Q2 — Who are we building it for?**  \nIs this your personal engineering tool, something your team will operate, or a product for other users? Who is accountable when its output is wrong?",
+      "id": "Q2",
+      "question": "❓ **Q2 — Who are we building it for?**  \nIs this your personal engineering tool, something your team will operate, or a product for other users? Who is accountable when its output is wrong?\n\n➡️ **Recommendation:** Build for you as the first operator and accountable reviewer. Prove the loop before taking on a shared platform’s permissions and coordination problems.",
+      "recommendation": "**Recommendation:** Build for you as the first operator and accountable reviewer. Prove the loop before taking on a shared platform’s permissions and coordination problems."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555640631207002224",
+        "text": "\"For now, I don't see any hard limits except start a new project without my approval or my idea.\""
+      },
+      "challenge": "❓ **Q3 — What are the hard limits on its autonomy?**  \nWhat must it never do without your approval? Also, are there non-negotiable constraints on spending, data access, or where it runs?",
+      "id": "Q3",
+      "question": "❓ **Q3 — What are the hard limits on its autonomy?**  \nWhat must it never do without your approval? Also, are there non-negotiable constraints on spending, data access, or where it runs?\n\n➡️ **Recommendation:** Let it investigate, implement, test, and revise in an isolated workspace. Require approval for merges, deployments, destructive actions, and external communications. Give each run an explicit budget and a stop condition.\n\nAnswer **Q1–Q3** in rough terms. We’ll resolve the architecture only after these roots are settled.",
+      "recommendation": "**Recommendation:** Let it investigate, implement, test, and revise in an isolated workspace. Require approval for merges, deployments, destructive actions, and external communications. Give each run an explicit budget and a stop condition.\n\nAnswer **Q1–Q3** in rough terms. We’ll resolve the architecture only after these roots are settled."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642876380184586",
+        "text": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+      },
+      "challenge": "❓ **Q4 — Where does the factory end?**  \nIs generating the specs the entire initial loop, or is it the first stage of a factory that also implements, tests, and delivers the product?",
+      "id": "Q4",
+      "question": "❓ **Q4 — Where does the factory end?**  \nIs generating the specs the entire initial loop, or is it the first stage of a factory that also implements, tests, and delivers the product?\n\n➡️ **Recommendation:** Design the intended end-to-end loop now, but make **idea → approved specs** the first working increment. That lets us validate how it captures your intent before it writes code.",
+      "recommendation": "**Recommendation:** Design the intended end-to-end loop now, but make **idea → approved specs** the first working increment. That lets us validate how it captures your intent before it writes code."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642876380184586",
+        "text": "\"The factory ends with a fully developed product. That's for question four, for question five In the specs the whole product and the first step belongs in the specs and deciding on The language that's going to be done in the product the angle or the factory will be to loop around realme, bill specs, bill tickets, take the ticket, implement the ticket, simplify the code with this code, review the code, merge the code, pick up a notebook ticket, enter your p, until all the tickets are done, and then you start with another realme and the loop has started again.\""
+      },
+      "challenge": "❓ **Q5 — What belongs in the specs?**  \nDo you want a record of every question and answer, implementation-ready specifications derived from those answers, or both?",
+      "id": "Q5",
+      "question": "❓ **Q5 — What belongs in the specs?**  \nDo you want a record of every question and answer, implementation-ready specifications derived from those answers, or both?\n\n➡️ **Recommendation:** **Both, kept distinct:** a question-and-answer decision log for traceability, plus specs covering goals, behavior, constraints, non-goals, and verifiable acceptance criteria. A transcript alone isn’t a build specification.",
+      "recommendation": "**Recommendation:** **Both, kept distinct:** a question-and-answer decision log for traceability, plus specs covering goals, behavior, constraints, non-goals, and verifiable acceptance criteria. A transcript alone isn’t a build specification."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555642969170772079",
+        "text": "\"The agent is autonomous with deciding what it needs with me, and therefore decides when the grilling is finished.\""
+      },
+      "challenge": "❓ **Q6 — Who decides the grilling is finished?**  \nShould it continue until every identified decision is resolved, or can you end the interview with unresolved points?",
+      "id": "Q6",
+      "question": "❓ **Q6 — Who decides the grilling is finished?**  \nShould it continue until every identified decision is resolved, or can you end the interview with unresolved points?\n\n➡️ **Recommendation:** It proposes when the design is sufficiently settled and explicitly lists remaining uncertainties. **You approve the specs before implementation.** You can stop earlier, but unanswered points remain visible—not silently converted into assumptions.",
+      "recommendation": "**Recommendation:** It proposes when the design is sufficiently settled and explicitly lists remaining uncertainties. **You approve the specs before implementation.** You can stop earlier, but unanswered points remain visible—not silently converted into assumptions."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q7: spending must always be asked for approval\nDeploying must always be secure."
+      },
+      "challenge": "❓ **Q7 — External consequences**  \nYou haven’t answered this part yet: does approving an idea also authorize spending money, deploying publicly, and deleting real data?",
+      "id": "Q7",
+      "question": "❓ **Q7 — External consequences**  \nYou haven’t answered this part yet: does approving an idea also authorize spending money, deploying publicly, and deleting real data?\n\n➡️ **Recommendation:** Autonomous development and merges; separate approval for new spending, public releases, and destructive changes to real data.",
+      "recommendation": "**Recommendation:** Autonomous development and merges; separate approval for new spending, public releases, and destructive changes to real data."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q8: agent recommend and decision is with the user."
+      },
+      "challenge": "❓ **Q8 — “Language” in the specs**  \nDo you mean the programming language, the product’s user-facing language, or both? Should the agent choose, or settle this with you during grilling?",
+      "id": "Q8",
+      "question": "❓ **Q8 — “Language” in the specs**  \nDo you mean the programming language, the product’s user-facing language, or both? Should the agent choose, or settle this with you during grilling?\n\n➡️ **Recommendation:** Cover both. The agent recommends a stack based on the product, checks whether you have constraints, and records the decision before generating tickets.",
+      "recommendation": "**Recommendation:** Cover both. The agent recommends a stack based on the product, checks whether you have constraints, and records the decision before generating tickets."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q9: next grilling we’ll be for next iteration of the product. A product is never finished."
+      },
+      "challenge": "❓ **Q9 — What does the next grilling round investigate?**  \nAfter all tickets are completed, does it ask you for the next improvement to **the same product**, evaluate gaps against the original specs, or wait for a new product idea?",
+      "id": "Q9",
+      "question": "❓ **Q9 — What does the next grilling round investigate?**  \nAfter all tickets are completed, does it ask you for the next improvement to **the same product**, evaluate gaps against the original specs, or wait for a new product idea?\n\n➡️ **Recommendation:** First verify the existing product against its specs. Then grill you about its next iteration. A new product remains blocked until you supply or approve its idea.",
+      "recommendation": "**Recommendation:** First verify the existing product against its specs. Then grill you about its next iteration. A new product remains blocked until you supply or approve its idea."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555645249076859021",
+        "text": "Q10: fully developed is maybe the wrong wording. The  step is finished when the tickets created by the specs and the grilling are all finished. \nA ticket is finished when all tests are green. It answers the ticket description/feature/changes/requirements."
+      },
+      "challenge": "❓ **Q10 — What counts as a fully developed product?**  \nIs it enough that it runs locally, or must it be deployed and usable by its intended users?",
+      "id": "Q10",
+      "question": "❓ **Q10 — What counts as a fully developed product?**  \nIs it enough that it runs locally, or must it be deployed and usable by its intended users?\n\n➡️ **Recommendation:** Define this during each product’s initial grilling: required user journeys, acceptance tests, runtime environment, and delivery requirements. Completion is measured against those—not the agent’s feeling that it is finished.",
+      "recommendation": "**Recommendation:** Define this during each product’s initial grilling: required user journeys, acceptance tests, runtime environment, and delivery requirements. Completion is measured against those—not the agent’s feeling that it is finished."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q11: implementation starts right away. If necessary the user will stop it."
+      },
+      "challenge": "❓ **Q11 — What authorizes implementation?**  \nAfter the agent finishes grilling and generates the specs and tickets, should implementation start automatically, or should you approve that package first?",
+      "id": "Q11",
+      "question": "❓ **Q11 — What authorizes implementation?**  \nAfter the agent finishes grilling and generates the specs and tickets, should implementation start automatically, or should you approve that package first?\n\n➡️ **Recommendation:** One approval of the iteration’s specs and ticket scope, then autonomous execution of that batch. This catches misunderstandings without requiring approval of every ticket.",
+      "recommendation": "**Recommendation:** One approval of the iteration’s specs and ticket scope, then autonomous execution of that batch. This catches misunderstandings without requiring approval of every ticket."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q12: a ticket is closed only when it is merged on main. If it is not merged, it doesn’t exist. The agents must be able to merge the tickets autonomously."
+      },
+      "challenge": "❓ **Q12 — Does “finished” include review and merge?**  \nCan a ticket close when its implementation satisfies the requirements and passes tests, or only after simplification, successful review, and merge?",
+      "id": "Q12",
+      "question": "❓ **Q12 — Does “finished” include review and merge?**  \nCan a ticket close when its implementation satisfies the requirements and passes tests, or only after simplification, successful review, and merge?\n\n➡️ **Recommendation:** Close it **only after merge**, with tests green on the resulting integrated code. Review must check the requirements independently; green tests alone can miss functionality—or pass because the agent weakened a test.",
+      "recommendation": "**Recommendation:** Close it **only after merge**, with tests green on the resulting integrated code. Review must check the requirements independently; green tests alone can miss functionality—or pass because the agent weakened a test."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q13: great question. A debug agent comes in and investigates. Create a report and the user can make the decision for the direction the project has to take to resolve the ticket being stuck."
+      },
+      "challenge": "❓ **Q13 — What happens when a ticket gets stuck?**  \nIf tests keep failing, review keeps rejecting the changes, or a dependency blocks progress, how should the factory respond?",
+      "id": "Q13",
+      "question": "❓ **Q13 — What happens when a ticket gets stuck?**  \nIf tests keep failing, review keeps rejecting the changes, or a dependency blocks progress, how should the factory respond?\n\n➡️ **Recommendation:** Retry autonomously within a bounded attempt budget. Then mark the ticket blocked, preserve the evidence, and notify you. Continue with another independent ticket if possible. Never silently reduce requirements to make the ticket pass.",
+      "recommendation": "**Recommendation:** Retry autonomously within a bounded attempt budget. Then mark the ticket blocked, preserve the evidence, and notify you. Continue with another independent ticket if possible. Never silently reduce requirements to make the ticket pass."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555647245297254421",
+        "text": "Q14: quality gates, security checks must pass in CI and then CD. Agents must monitor their deployment in main. If it fails they need to fix it."
+      },
+      "challenge": "❓ **Q14 — How do we enforce secure deployment?**  \nMay the factory deploy automatically once security checks pass, or should deployment also require your approval? “Secure” needs a checkable gate, not an agent’s assurance.",
+      "id": "Q14",
+      "question": "❓ **Q14 — How do we enforce secure deployment?**  \nMay the factory deploy automatically once security checks pass, or should deployment also require your approval? “Secure” needs a checkable gate, not an agent’s assurance.\n\n➡️ **Recommendation:** Allow automatic deployment to an isolated preview environment after mandatory checks. Require approval for production initially. Define the concrete security requirements during each product’s grilling, with failed checks blocking deployment.",
+      "recommendation": "**Recommendation:** Allow automatic deployment to an isolated preview environment after mandatory checks. Require approval for production initially. Define the concrete security requirements during each product’s grilling, with failed checks blocking deployment."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q15: agents responsible for the ticket decides when it is stuck. It still has to try to fix it and iterate."
+      },
+      "challenge": "❓ **Q15 — When is a ticket “stuck”?**  \nWhat should trigger the debug agent: repeated unsuccessful fixes, lack of progress, an explicit blocker, or any failure?",
+      "id": "Q15",
+      "question": "❓ **Q15 — When is a ticket “stuck”?**  \nWhat should trigger the debug agent: repeated unsuccessful fixes, lack of progress, an explicit blocker, or any failure?\n\n➡️ **Recommendation:** Ordinary failures get an autonomous fix attempt. Repeated failure of the same check, no meaningful progress, or a blocker requiring a new product/architecture decision triggers diagnosis. The report should contain evidence, attempted fixes, the likely cause, and recommended options—not just logs.",
+      "recommendation": "**Recommendation:** Ordinary failures get an autonomous fix attempt. Repeated failure of the same check, no meaningful progress, or a blocker requiring a new product/architecture decision triggers diagnosis. The report should contain evidence, attempted fixes, the likely cause, and recommended options—not just logs."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q16: agent comes in to fix main. No commit can be merged on main. Roll forward is a possible quick solution if possible. Agents decide on the situation."
+      },
+      "challenge": "❓ **Q16 — What happens while `main` is broken?**  \nShould other tickets keep merging while an agent repairs a failed CI/CD run or deployment? And if that repair becomes stuck, does your debug-report-and-user-decision rule apply?",
+      "id": "Q16",
+      "question": "❓ **Q16 — What happens while `main` is broken?**  \nShould other tickets keep merging while an agent repairs a failed CI/CD run or deployment? And if that repair becomes stuck, does your debug-report-and-user-decision rule apply?\n\n➡️ **Recommendation:** Pause new merges and prioritize restoring healthy `main`. Attempt repairs autonomously; escalate through the debug agent if stuck. Permit a safe revert of the offending change when appropriate, and reopen its ticket if its requirements are no longer delivered.",
+      "recommendation": "**Recommendation:** Pause new merges and prioritize restoring healthy `main`. Attempt repairs autonomously; escalate through the debug agent if stuck. Permit a safe revert of the offending change when appropriate, and reopen its ticket if its requirements are no longer delivered."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q17: tickets are in repository projects board. Specs are in code under docs/"
+      },
+      "challenge": "❓ **Q17 — Where does the factory keep its authoritative state?**  \nWhere should specs, tickets, dependencies, progress, and debug reports live so that a restart doesn’t lose the project’s position?",
+      "id": "Q17",
+      "question": "❓ **Q17 — Where does the factory keep its authoritative state?**  \nWhere should specs, tickets, dependencies, progress, and debug reports live so that a restart doesn’t lose the project’s position?\n\n➡️ **Recommendation:** Versioned specs and decision records in the product repository; tickets and dependencies in GitHub Issues; debug reports linked to the affected ticket. Use a small durable execution record for the factory’s current stage—chat history shouldn’t be its only memory.",
+      "recommendation": "**Recommendation:** Versioned specs and decision records in the product repository; tickets and dependencies in GitHub Issues; debug reports linked to the affected ticket. Use a small durable execution record for the factory’s current stage—chat history shouldn’t be its only memory."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555650915921567804",
+        "text": "Q18: proceed as recommended"
+      },
+      "challenge": "❓ **Q18 — How independent are the agents?**  \nShould one agent carry a ticket through implementation, simplification, review, and merge, or should those stages use separate agents?",
+      "id": "Q18",
+      "question": "❓ **Q18 — How independent are the agents?**  \nShould one agent carry a ticket through implementation, simplification, review, and merge, or should those stages use separate agents?\n\n➡️ **Recommendation:** Separate implementation and review agents with fresh contexts. The reviewer receives the ticket, specs, standards, and diff—not the implementer’s persuasive summary. Use a separate debug agent for investigation. A deterministic controller manages transitions and verifies stage results rather than letting agents declare themselves done.",
+      "recommendation": "**Recommendation:** Separate implementation and review agents with fresh contexts. The reviewer receives the ticket, specs, standards, and diff—not the implementer’s persuasive summary. Use a separate debug agent for investigation. A deterministic controller manages transitions and verifies stage results rather than letting agents declare themselves done."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q19: as recommended"
+      },
+      "challenge": "❓ **Q19 — Does the merge freeze exempt repairs?**  \n“No commit can be merged on `main`” conflicts with roll-forward: a repair usually needs a new commit.",
+      "id": "Q19",
+      "question": "❓ **Q19 — Does the merge freeze exempt repairs?**  \n“No commit can be merged on `main`” conflicts with roll-forward: a repair usually needs a new commit.\n\n➡️ **Recommendation:** Freeze **ordinary ticket merges**, but allow the repair agent to merge recovery changes through the required quality/security gates. Resume ordinary merges only after `main` and its deployment are healthy.",
+      "recommendation": "**Recommendation:** Freeze **ordinary ticket merges**, but allow the repair agent to merge recovery changes through the required quality/security gates. Resume ordinary merges only after `main` and its deployment are healthy."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q20: as recommended"
+      },
+      "challenge": "❓ **Q20 — One ticket at a time, or parallel tickets?**  \nSeparate agents can collaborate on one ticket without implementing multiple tickets concurrently. Which execution model do you want?",
+      "id": "Q20",
+      "question": "❓ **Q20 — One ticket at a time, or parallel tickets?**  \nSeparate agents can collaborate on one ticket without implementing multiple tickets concurrently. Which execution model do you want?\n\n➡️ **Recommendation:** Start with **one active implementation ticket**, chosen from tickets whose dependencies are satisfied. Parallelize its independent review work. Add concurrent ticket implementation later once isolation and integration are proven.",
+      "recommendation": "**Recommendation:** Start with **one active implementation ticket**, chosen from tickets whose dependencies are satisfied. Parallelize its independent review work. Add concurrent ticket implementation later once isolation and integration are proven."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q21: grill me starts from conversation. Factory runs in the background. Hermes comes back to the thread if it needs something or there is an issue. Otherwise no interactions."
+      },
+      "challenge": "❓ **Q21 — What runs the factory?**  \nShould this be a reusable controller that runs independently of our chat, or a workflow I execute inside a Hermes conversation?",
+      "id": "Q21",
+      "question": "❓ **Q21 — What runs the factory?**  \nShould this be a reusable controller that runs independently of our chat, or a workflow I execute inside a Hermes conversation?\n\n➡️ **Recommendation:** A reusable, deterministic controller independent of chat, with agents executing the skill-based stages. It persists progress, resumes after interruption, and exposes start, status, pause, and stop controls. Hermes can be your interface without being the sole place the loop exists.",
+      "recommendation": "**Recommendation:** A reusable, deterministic controller independent of chat, with agents executing the skill-based stages. It persists progress, resumes after interruption, and exposes start, status, pause, and stop controls. Hermes can be your interface without being the sole place the loop exists."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555652059267735564",
+        "text": "Q22: as recommended"
+      },
+      "challenge": "❓ **Q22 — How does the next iteration begin?**  \nWhen the batch is merged and deployment is healthy, does the factory immediately invite you into another grilling session, or wait for you to request the next iteration?",
+      "id": "Q22",
+      "question": "❓ **Q22 — How does the next iteration begin?**  \nWhen the batch is merged and deployment is healthy, does the factory immediately invite you into another grilling session, or wait for you to request the next iteration?\n\n➡️ **Recommendation:** It delivers an iteration report and invites you to the next grilling. It then waits for your input—no self-invented feature batch while you’re absent. The next interview starts from the existing product and its updated specs.",
+      "recommendation": "**Recommendation:** It delivers an iteration report and invites you to the next grilling. It then waits for your input—no self-invented feature batch while you’re absent. The next interview starts from the existing product and its updated specs."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q23: as recommended"
+      },
+      "challenge": "❓ **Q23 — Do new bugs extend the current iteration?**  \nIf agents discover bugs while executing the planned tickets, do all of them join the current batch, or can some wait for the next iteration?",
+      "id": "Q23",
+      "question": "❓ **Q23 — Do new bugs extend the current iteration?**  \nIf agents discover bugs while executing the planned tickets, do all of them join the current batch, or can some wait for the next iteration?\n\n➡️ **Recommendation:** Fix broken `main` immediately. Include bugs that prevent the current iteration from satisfying its requirements. Put unrelated, non-blocking bugs on the board for the next grilling. Otherwise, discovering new work can keep an iteration open indefinitely.",
+      "recommendation": "**Recommendation:** Fix broken `main` immediately. Include bugs that prevent the current iteration from satisfying its requirements. Put unrelated, non-blocking bugs on the board for the next grilling. Otherwise, discovering new work can keep an iteration open indefinitely."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q24: as recommended"
+      },
+      "challenge": "❓ **Q24 — What continues while you’re deciding on a stuck ticket?**  \nAfter the debug agent posts its report, should the entire factory wait, or may it work on another independent ticket?",
+      "id": "Q24",
+      "question": "❓ **Q24 — What continues while you’re deciding on a stuck ticket?**  \nAfter the debug agent posts its report, should the entire factory wait, or may it work on another independent ticket?\n\n➡️ **Recommendation:** Block the affected ticket and its dependents, then continue independent work. If `main` is broken, keep ordinary execution paused until recovery is resolved. Your decision unblocks the relevant work—not necessarily the whole factory.",
+      "recommendation": "**Recommendation:** Block the affected ticket and its dependents, then continue independent work. If `main` is broken, keep ordinary execution paused until recovery is resolved. Your decision unblocks the relevant work—not necessarily the whole factory."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555654226800287906",
+        "text": "Q25: pause. as recommended"
+      },
+      "challenge": "❓ **Q25 — What does “stop” mean operationally?**  \nWhen you interrupt the factory, should it stop immediately, finish its active ticket, or pause at a safe checkpoint? What should happen after a server restart?",
+      "id": "Q25",
+      "question": "❓ **Q25 — What does “stop” mean operationally?**  \nWhen you interrupt the factory, should it stop immediately, finish its active ticket, or pause at a safe checkpoint? What should happen after a server restart?\n\n➡️ **Recommendation:** A normal pause prevents new work and checkpoints the active stage without merging further changes. An emergency stop terminates workers immediately. Preserve work and diagnostic state in both cases; after a restart, reconcile repository, board, and CI state before resuming.\n\nI’m checking the supported background execution and thread-notification mechanisms separately, without touching the beta.",
+      "recommendation": "**Recommendation:** A normal pause prevents new work and checkpoints the active stage without merging further changes. An emergency stop terminates workers immediately. Preserve work and diagnostic state in both cases; after a restart, reconcile repository, board, and CI state before resuming.\n\nI’m checking the supported background execution and thread-notification mechanisms separately, without touching the beta."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555655064360718367",
+        "text": "Q26: as recommended"
+      },
+      "challenge": "❓ **Q26 — Which part of the product becomes tickets?**  \nThe specs describe the whole product and its first step. Should the factory generate executable tickets for the **current milestone only**, or for everything in the product vision?",
+      "id": "Q26",
+      "question": "❓ **Q26 — Which part of the product becomes tickets?**  \nThe specs describe the whole product and its first step. Should the factory generate executable tickets for the **current milestone only**, or for everything in the product vision?\n\n➡️ **Recommendation:** Keep the whole-product vision in `docs/`, but generate and execute tickets only for the milestone settled during grilling. Future capabilities remain documented without becoming an enormous committed backlog.",
+      "recommendation": "**Recommendation:** Keep the whole-product vision in `docs/`, but generate and execute tickets only for the milestone settled during grilling. Future capabilities remain documented without becoming an enormous committed backlog."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555655064360718367",
+        "text": "Q27: GitHub repo is the platform. User must specify if there is a different account or platform."
+      },
+      "challenge": "❓ **Q27 — Is GitHub the repository platform?**  \nBy “repository projects board,” do you mean GitHub Projects? Should GitHub Issues represent both feature tickets and bugs, with pull requests delivering them?",
+      "id": "Q27",
+      "question": "❓ **Q27 — Is GitHub the repository platform?**  \nBy “repository projects board,” do you mean GitHub Projects? Should GitHub Issues represent both feature tickets and bugs, with pull requests delivering them?\n\n➡️ **Recommendation:** Yes: GitHub Issues on a GitHub Projects board, linked to their specs and delivery PRs. Use the same required work-item format for features and bugs, with additional reproduction details for bugs.",
+      "recommendation": "**Recommendation:** Yes: GitHub Issues on a GitHub Projects board, linked to their specs and delivery PRs. Use the same required work-item format for features and bugs, with additional reproduction details for bugs."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555657800804208840",
+        "text": "Okay proceed with workers as recommended"
+      },
+      "challenge": "❓ **Q28, clarified — Are you happy with dedicated Hermes role profiles launching fresh workers, rather than using Codex CLI as the executor?**",
+      "id": "Q28",
+      "question": "❓ **Q28, clarified — Are you happy with dedicated Hermes role profiles launching fresh workers, rather than using Codex CLI as the executor?**\n\n➡️ That is my recommendation. **No profiles have been created or changed.**",
+      "recommendation": "That is my recommendation. **No profiles have been created or changed.**"
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "hermes-session:20261002_173951_e80aca92:message:15252",
+        "text": "Q29: as recommended"
+      },
+      "challenge": "❓ **Q29 — What counts as spending that needs approval?**  \nDoes using an existing subscription or previously approved service count, or is the approval boundary any **new charge or financial commitment**? Metered model calls matter here too.",
+      "id": "Q29",
+      "question": "❓ **Q29 — What counts as spending that needs approval?**  \nDoes using an existing subscription or previously approved service count, or is the approval boundary any **new charge or financial commitment**? Metered model calls matter here too.\n\n➡️ **Recommendation:** Existing subscription allowances can be used autonomously. Any chargeable API usage, purchase, or infrastructure allocation requires approval with a clear spending scope and ceiling. Exhausting an allowance pauses the affected work—it must not silently switch to a paid alternative.",
+      "recommendation": "**Recommendation:** Existing subscription allowances can be used autonomously. Any chargeable API usage, purchase, or infrastructure allocation requires approval with a clear spending scope and ceiling. Exhausting an allowance pauses the affected work—it must not silently switch to a paid alternative."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q30: as recommended"
+      },
+      "challenge": "❓ **Q30 — What should the factory itself be built with?**  \nThis is separate from the programming language chosen for each product.",
+      "id": "Q30",
+      "question": "❓ **Q30 — What should the factory itself be built with?**  \nThis is separate from the programming language chosen for each product.\n\n➡️ **Recommendation:** Python for the deterministic controller, using supported Hermes and GitHub interfaces. Keep it outside Hermes’s core so it can be versioned and tested independently.",
+      "recommendation": "**Recommendation:** Python for the deterministic controller, using supported Hermes and GitHub interfaces. Keep it outside Hermes’s core so it can be versioned and tested independently."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q31: as recommended"
+      },
+      "challenge": "❓ **Q31 — Where should it run?**  \nShould the background controller and workers run on this server, or somewhere else?",
+      "id": "Q31",
+      "question": "❓ **Q31 — Where should it run?**  \nShould the background controller and workers run on this server, or somewhere else?\n\n➡️ **Recommendation:** Initially, this server, under a supervised service with persistent state and restart recovery. Grilling and decision requests stay in the originating thread. No new infrastructure spending.",
+      "recommendation": "**Recommendation:** Initially, this server, under a supervised service with persistent state and restart recovery. Grilling and decision requests stay in the originating thread. No new infrastructure spending."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q32: as recommended"
+      },
+      "challenge": "❓ **Q32 — How should workers get credentials and permissions?**  \nShould every role have the same access, or should access depend on its responsibilities?",
+      "id": "Q32",
+      "question": "❓ **Q32 — How should workers get credentials and permissions?**  \nShould every role have the same access, or should access depend on its responsibilities?\n\n➡️ **Recommendation:** Separate capabilities: reviewers inspect and run checks; implementers change their worktree and push a branch; only the controlled merge path can merge. CI/CD handles deployment credentials. Workers should not receive your personal assistant’s unrelated credentials. Actual isolation must enforce this—not just prompts.",
+      "recommendation": "**Recommendation:** Separate capabilities: reviewers inspect and run checks; implementers change their worktree and push a branch; only the controlled merge path can merge. CI/CD handles deployment credentials. Workers should not receive your personal assistant’s unrelated credentials. Actual isolation must enforce this—not just prompts."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555658675836948572",
+        "text": "Q33: as recommended"
+      },
+      "challenge": "❓ **Q33 — What model policy should workers use initially?**  \nShould roles use the existing approved provider/model setup, or should we choose different models for implementation, review, and debugging?",
+      "id": "Q33",
+      "question": "❓ **Q33 — What model policy should workers use initially?**  \nShould roles use the existing approved provider/model setup, or should we choose different models for implementation, review, and debugging?\n\n➡️ **Recommendation:** Start with the existing approved setup, make model selection configurable per role, and introduce differences only when evaluation shows a benefit. No automatic switch to a chargeable provider when quotas run out.",
+      "recommendation": "**Recommendation:** Start with the existing approved setup, make model selection configurable per role, and introduce differences only when evaluation shows a benefit. No automatic switch to a chargeable provider when quotas run out."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      },
+      "challenge": "❓ **Q34 — New products, existing repositories, or both?**  \nShould the factory create a repository for an approved new product, work in an existing repository you explicitly identify, or support both?",
+      "id": "Q34",
+      "question": "❓ **Q34 — New products, existing repositories, or both?**  \nShould the factory create a repository for an approved new product, work in an existing repository you explicitly identify, or support both?\n\n➡️ **Recommendation:** Both. New repositories are private by default; existing repositories require an explicit selection. It must never infer that an unrelated repository—including the beta—is a target.",
+      "recommendation": "**Recommendation:** Both. New repositories are private by default; existing repositories require an explicit selection. It must never infer that an unrelated repository—including the beta—is a target."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      },
+      "challenge": "❓ **Q35 — Can multiple products run simultaneously?**  \nWe agreed on one active implementation ticket. Should that limit apply across the whole factory, or separately to each product?",
+      "id": "Q35",
+      "question": "❓ **Q35 — Can multiple products run simultaneously?**  \nWe agreed on one active implementation ticket. Should that limit apply across the whole factory, or separately to each product?\n\n➡️ **Recommendation:** Initially, one active product iteration across the factory. Other products can retain their state while paused. This keeps resource use, repair priority, and operator attention predictable.",
+      "recommendation": "**Recommendation:** Initially, one active product iteration across the factory. Other products can retain their state while paused. This keeps resource use, repair priority, and operator attention predictable."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555659634470297633",
+        "text": "Q34-36: as recommended"
+      },
+      "challenge": "❓ **Q36 — What happens when requirements change mid-iteration?**  \nIf you change the product direction or materially edit a ticket while workers are implementing it, should they immediately adapt, or pause for clarification?",
+      "id": "Q36",
+      "question": "❓ **Q36 — What happens when requirements change mid-iteration?**  \nIf you change the product direction or materially edit a ticket while workers are implementing it, should they immediately adapt, or pause for clarification?\n\n➡️ **Recommendation:** Pause the affected work, resolve the change with you, update the specs and tickets, then resume. Preserve completed work where useful. Minor clarifications can proceed, but agents must not silently reinterpret a changed requirement or merge against an obsolete ticket version.\n\nI’m auditing the existing model setup, GitHub identity, and available isolation mechanisms read-only before we finalize the technical design; no beta inspection or configuration changes.",
+      "recommendation": "**Recommendation:** Pause the affected work, resolve the change with you, update the specs and tickets, then resume. Preserve completed work where useful. Minor clarifications can proceed, but agents must not silently reinterpret a changed requirement or merge against an obsolete ticket version.\n\nI’m auditing the existing model setup, GitHub identity, and available isolation mechanisms read-only before we finalize the technical design; no beta inspection or configuration changes."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      },
+      "challenge": "❓ **Q37 — Approve containerized workers?**  \nShould each worker run entirely inside an isolated container, rather than merely sending its terminal commands to Docker?",
+      "id": "Q37",
+      "question": "❓ **Q37 — Approve containerized workers?**  \nShould each worker run entirely inside an isolated container, rather than merely sending its terminal commands to Docker?\n\n➡️ **Recommendation:** Yes. Keep the trusted controller outside worker containers. Give workers only their assigned workspace, scratch space, and necessary model access—no Docker socket, personal credentials, or deployment credentials. The reviewer gets read-only access to the submitted code plus writable scratch space for running checks. GitHub writes go through controlled operations that enforce the role’s permissions.\n\nThis is the proposed design; its isolation must be tested before we call it enforced.",
+      "recommendation": "**Recommendation:** Yes. Keep the trusted controller outside worker containers. Give workers only their assigned workspace, scratch space, and necessary model access—no Docker socket, personal credentials, or deployment credentials. The reviewer gets read-only access to the submitted code plus writable scratch space for running checks. GitHub writes go through controlled operations that enforce the role’s permissions.\n\nThis is the proposed design; its isolation must be tested before we call it enforced."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      },
+      "challenge": "❓ **Q38 — Can agents change the checks that gate them?**  \nAgents sometimes “fix” a failing build by removing a test, disabling a scanner, or relaxing a threshold. What authority should they have here?",
+      "id": "Q38",
+      "question": "❓ **Q38 — Can agents change the checks that gate them?**  \nAgents sometimes “fix” a failing build by removing a test, disabling a scanner, or relaxing a threshold. What authority should they have here?\n\n➡️ **Recommendation:** They may add or legitimately update tests, with independent review against the requirements. They may **not bypass required checks, weaken security policy, or disable branch protection** to obtain a green result. Changes to those policies require your decision.",
+      "recommendation": "**Recommendation:** They may add or legitimately update tests, with independent review against the requirements. They may **not bypass required checks, weaken security policy, or disable branch protection** to obtain a green result. Changes to those policies require your decision."
+    },
+    {
+      "answer": {
+        "operator_id": "1551666201732587670",
+        "reference": "https://discord.com/channels/1551691688291074168/1555635434036396065/1555660260457451612",
+        "text": "Q37-39: as recommended"
+      },
+      "challenge": "❓ **Q39 — How should we validate the factory itself?**  \nMay we create a private, disposable GitHub validation repository alongside the factory’s own repository?",
+      "id": "Q39",
+      "question": "❓ **Q39 — How should we validate the factory itself?**  \nMay we create a private, disposable GitHub validation repository alongside the factory’s own repository?\n\n➡️ **Recommendation:** Yes, explicitly for testing—not as a new product. Exercise the real loop and deliberately test rejection, a stuck ticket, broken `main`, pause/restart, and spending approval. We should prove those paths work, not just demonstrate a successful agent-generated commit.",
+      "recommendation": "**Recommendation:** Yes, explicitly for testing—not as a new product. Exercise the real loop and deliberately test rejection, a stuck ticket, broken `main`, pause/restart, and spending approval. We should prove those paths work, not just demonstrate a successful agent-generated commit."
+    }
+  ],
+  "skills": {
+    "catalog": [
+      {
+        "dependencies": [
+          "grilling"
+        ],
+        "implicit_loops": [],
+        "name": "grill-me",
+        "path": "/inputs/skills/grill-me/SKILL.md",
+        "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [],
+        "name": "grilling",
+        "path": "/inputs/skills/grilling/SKILL.md",
+        "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [
+          "routine_spec_approval"
+        ],
+        "name": "to-spec",
+        "path": "/inputs/skills/to-spec/SKILL.md",
+        "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [
+          "routine_ticket_batch_approval"
+        ],
+        "name": "to-tickets",
+        "path": "/inputs/skills/to-tickets/SKILL.md",
+        "sha256": "5c9fba69845c2519b9b35b9af42ae5142c21f8ca15ac2123dc2722002c8058ae"
+      },
+      {
+        "dependencies": [
+          "tdd",
+          "code-review"
+        ],
+        "implicit_loops": [
+          "nested_duplicate_review"
+        ],
+        "name": "implement",
+        "path": "/inputs/skills/implement/SKILL.md",
+        "sha256": "6d3fd9e83b8f36e5213854779db49b256a457a7ebb4a503e53fa7dcff696adc3"
+      },
+      {
+        "dependencies": [
+          "codebase-design",
+          "code-review"
+        ],
+        "implicit_loops": [],
+        "name": "tdd",
+        "path": "/inputs/skills/tdd/SKILL.md",
+        "sha256": "93ea419b76e9caaf26153b828e984f7c3fb136f4caa67b14af95f32ea965a1cc"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [],
+        "name": "codebase-design",
+        "path": "/inputs/skills/codebase-design/SKILL.md",
+        "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [],
+        "name": "code-review",
+        "path": "/inputs/skills/code-review/SKILL.md",
+        "sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50"
+      },
+      {
+        "dependencies": [],
+        "implicit_loops": [],
+        "name": "simplify-code",
+        "path": "/inputs/skills/simplify-code/SKILL.md",
+        "sha256": "9ee977c3362a1c07f2e327198e066ddb3c0ed67709706fc410165ee820b2ca01"
+      }
+    ],
+    "stages": {
+      "grilling": "grill-me",
+      "implementation": "implement",
+      "review": "code-review",
+      "simplification": "simplify-code",
+      "specification": "to-spec",
+      "tickets": "to-tickets"
+    }
+  }
+}
